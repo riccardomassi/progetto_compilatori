@@ -1,0 +1,1270 @@
+Starting parse
+Entering state 0
+Stack now 0
+Reading a token
+--(end of buffer or a NUL)
+--accepting rule at line 61 ("def")
+Next token is token def (test_progetto/floor.k:1.1-3: )
+Shifting token def (test_progetto/floor.k:1.1-3: )
+Entering state 2
+Stack now 0 2
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("pow2")
+Next token is token id (test_progetto/floor.k:1.5-8: )
+Shifting token id (test_progetto/floor.k:1.5-8: )
+Entering state 10
+Stack now 0 2 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (test_progetto/floor.k:1.9: )
+Shifting token ( (test_progetto/floor.k:1.9: )
+Entering state 16
+Stack now 0 2 10 16
+Reading a token
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:1.10: )
+Shifting token id (test_progetto/floor.k:1.10: )
+Entering state 20
+Stack now 0 2 10 16 20
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("i")
+Next token is token id (test_progetto/floor.k:1.12: )
+Shifting token id (test_progetto/floor.k:1.12: )
+Entering state 20
+Stack now 0 2 10 16 20 20
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (test_progetto/floor.k:1.13: )
+Reducing stack by rule 12 (line 130):
+-> $$ = nterm idseq (test_progetto/floor.k:1.13: )
+Entering state 44
+Stack now 0 2 10 16 20 20 44
+Reducing stack by rule 13 (line 131):
+   $1 = token id (test_progetto/floor.k:1.12: )
+   $2 = nterm idseq (test_progetto/floor.k:1.13: )
+-> $$ = nterm idseq (test_progetto/floor.k:1.12: )
+Entering state 44
+Stack now 0 2 10 16 20 44
+Reducing stack by rule 13 (line 131):
+   $1 = token id (test_progetto/floor.k:1.10: )
+   $2 = nterm idseq (test_progetto/floor.k:1.12: )
+-> $$ = nterm idseq (test_progetto/floor.k:1.10-12: )
+Entering state 21
+Stack now 0 2 10 16 21
+Next token is token ) (test_progetto/floor.k:1.13: )
+Shifting token ) (test_progetto/floor.k:1.13: )
+Entering state 45
+Stack now 0 2 10 16 21 45
+Reducing stack by rule 10 (line 124):
+   $1 = token id (test_progetto/floor.k:1.5-8: )
+   $2 = token ( (test_progetto/floor.k:1.9: )
+   $3 = nterm idseq (test_progetto/floor.k:1.10-12: )
+   $4 = token ) (test_progetto/floor.k:1.13: )
+-> $$ = nterm proto (test_progetto/floor.k:1.5-13: )
+Entering state 12
+Stack now 0 2 12
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 50 ("{")
+Next token is token { (test_progetto/floor.k:1.15: )
+Shifting token { (test_progetto/floor.k:1.15: )
+Entering state 17
+Stack now 0 2 12 17
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("   ")
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:2.4: )
+Shifting token id (test_progetto/floor.k:2.4: )
+Entering state 29
+Stack now 0 2 12 17 29
+Reading a token
+--accepting rule at line 47 ("<")
+Next token is token < (test_progetto/floor.k:2.5: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:2.4: )
+-> $$ = nterm idexp (test_progetto/floor.k:2.4: )
+Entering state 43
+Stack now 0 2 12 17 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:2.4: )
+-> $$ = nterm exp (test_progetto/floor.k:2.4: )
+Entering state 39
+Stack now 0 2 12 17 39
+Next token is token < (test_progetto/floor.k:2.5: )
+Shifting token < (test_progetto/floor.k:2.5: )
+Entering state 66
+Stack now 0 2 12 17 39 66
+Reading a token
+--accepting rule at line 53 ("2")
+Next token is token number (test_progetto/floor.k:2.6: )
+Shifting token number (test_progetto/floor.k:2.6: )
+Entering state 30
+Stack now 0 2 12 17 39 66 30
+Reducing stack by rule 39 (line 185):
+   $1 = token number (test_progetto/floor.k:2.6: )
+-> $$ = nterm exp (test_progetto/floor.k:2.6: )
+Entering state 92
+Stack now 0 2 12 17 39 66 92
+Reading a token
+--accepting rule at line 39 ("*")
+Next token is token * (test_progetto/floor.k:2.7: )
+Shifting token * (test_progetto/floor.k:2.7: )
+Entering state 64
+Stack now 0 2 12 17 39 66 92 64
+Reading a token
+--accepting rule at line 72 ("i")
+Next token is token id (test_progetto/floor.k:2.8: )
+Shifting token id (test_progetto/floor.k:2.8: )
+Entering state 49
+Stack now 0 2 12 17 39 66 92 64 49
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 45 ("?")
+Next token is token ? (test_progetto/floor.k:2.10: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:2.8: )
+-> $$ = nterm idexp (test_progetto/floor.k:2.8: )
+Entering state 43
+Stack now 0 2 12 17 39 66 92 64 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:2.8: )
+-> $$ = nterm exp (test_progetto/floor.k:2.8: )
+Entering state 90
+Stack now 0 2 12 17 39 66 92 64 90
+Reducing stack by rule 35 (line 181):
+   $1 = nterm exp (test_progetto/floor.k:2.6: )
+   $2 = token * (test_progetto/floor.k:2.7: )
+   $3 = nterm exp (test_progetto/floor.k:2.8: )
+-> $$ = nterm exp (test_progetto/floor.k:2.6-8: )
+Entering state 92
+Stack now 0 2 12 17 39 66 92
+Next token is token ? (test_progetto/floor.k:2.10: )
+Reducing stack by rule 50 (line 204):
+   $1 = nterm exp (test_progetto/floor.k:2.4: )
+   $2 = token < (test_progetto/floor.k:2.5: )
+   $3 = nterm exp (test_progetto/floor.k:2.6-8: )
+-> $$ = nterm relexp (test_progetto/floor.k:2.4-8: )
+Entering state 42
+Stack now 0 2 12 17 42
+Next token is token ? (test_progetto/floor.k:2.10: )
+Reducing stack by rule 45 (line 197):
+   $1 = nterm relexp (test_progetto/floor.k:2.4-8: )
+-> $$ = nterm condexp (test_progetto/floor.k:2.4-8: )
+Entering state 41
+Stack now 0 2 12 17 41
+Next token is token ? (test_progetto/floor.k:2.10: )
+Shifting token ? (test_progetto/floor.k:2.10: )
+Entering state 68
+Stack now 0 2 12 17 41 68
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("i")
+Next token is token id (test_progetto/floor.k:2.12: )
+Shifting token id (test_progetto/floor.k:2.12: )
+Entering state 49
+Stack now 0 2 12 17 41 68 49
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 46 (":")
+Next token is token : (test_progetto/floor.k:2.14: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:2.12: )
+-> $$ = nterm idexp (test_progetto/floor.k:2.12: )
+Entering state 43
+Stack now 0 2 12 17 41 68 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:2.12: )
+-> $$ = nterm exp (test_progetto/floor.k:2.12: )
+Entering state 94
+Stack now 0 2 12 17 41 68 94
+Next token is token : (test_progetto/floor.k:2.14: )
+Shifting token : (test_progetto/floor.k:2.14: )
+Entering state 103
+Stack now 0 2 12 17 41 68 94 103
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("pow2")
+Next token is token id (test_progetto/floor.k:2.16-19: )
+Shifting token id (test_progetto/floor.k:2.16-19: )
+Entering state 49
+Stack now 0 2 12 17 41 68 94 103 49
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (test_progetto/floor.k:2.20: )
+Shifting token ( (test_progetto/floor.k:2.20: )
+Entering state 57
+Stack now 0 2 12 17 41 68 94 103 49 57
+Reading a token
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:2.21: )
+Shifting token id (test_progetto/floor.k:2.21: )
+Entering state 49
+Stack now 0 2 12 17 41 68 94 103 49 57 49
+Reading a token
+--accepting rule at line 44 (",")
+Next token is token "," (test_progetto/floor.k:2.22: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:2.21: )
+-> $$ = nterm idexp (test_progetto/floor.k:2.21: )
+Entering state 43
+Stack now 0 2 12 17 41 68 94 103 49 57 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:2.21: )
+-> $$ = nterm exp (test_progetto/floor.k:2.21: )
+Entering state 81
+Stack now 0 2 12 17 41 68 94 103 49 57 81
+Next token is token "," (test_progetto/floor.k:2.22: )
+Shifting token "," (test_progetto/floor.k:2.22: )
+Entering state 100
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100
+Reading a token
+--accepting rule at line 53 ("2")
+Next token is token number (test_progetto/floor.k:2.23: )
+Shifting token number (test_progetto/floor.k:2.23: )
+Entering state 30
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100 30
+Reducing stack by rule 39 (line 185):
+   $1 = token number (test_progetto/floor.k:2.23: )
+-> $$ = nterm exp (test_progetto/floor.k:2.23: )
+Entering state 81
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100 81
+Reading a token
+--accepting rule at line 39 ("*")
+Next token is token * (test_progetto/floor.k:2.24: )
+Shifting token * (test_progetto/floor.k:2.24: )
+Entering state 64
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100 81 64
+Reading a token
+--accepting rule at line 72 ("i")
+Next token is token id (test_progetto/floor.k:2.25: )
+Shifting token id (test_progetto/floor.k:2.25: )
+Entering state 49
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100 81 64 49
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (test_progetto/floor.k:2.26: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:2.25: )
+-> $$ = nterm idexp (test_progetto/floor.k:2.25: )
+Entering state 43
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100 81 64 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:2.25: )
+-> $$ = nterm exp (test_progetto/floor.k:2.25: )
+Entering state 90
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100 81 64 90
+Reducing stack by rule 35 (line 181):
+   $1 = nterm exp (test_progetto/floor.k:2.23: )
+   $2 = token * (test_progetto/floor.k:2.24: )
+   $3 = nterm exp (test_progetto/floor.k:2.25: )
+-> $$ = nterm exp (test_progetto/floor.k:2.23-25: )
+Entering state 81
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100 81
+Next token is token ) (test_progetto/floor.k:2.26: )
+Reducing stack by rule 57 (line 217):
+   $1 = nterm exp (test_progetto/floor.k:2.23-25: )
+-> $$ = nterm explist (test_progetto/floor.k:2.23-25: )
+Entering state 106
+Stack now 0 2 12 17 41 68 94 103 49 57 81 100 106
+Reducing stack by rule 58 (line 218):
+   $1 = nterm exp (test_progetto/floor.k:2.21: )
+   $2 = token "," (test_progetto/floor.k:2.22: )
+   $3 = nterm explist (test_progetto/floor.k:2.23-25: )
+-> $$ = nterm explist (test_progetto/floor.k:2.21-25: )
+Entering state 83
+Stack now 0 2 12 17 41 68 94 103 49 57 83
+Reducing stack by rule 56 (line 214):
+   $1 = nterm explist (test_progetto/floor.k:2.21-25: )
+-> $$ = nterm optexp (test_progetto/floor.k:2.21-25: )
+Entering state 82
+Stack now 0 2 12 17 41 68 94 103 49 57 82
+Next token is token ) (test_progetto/floor.k:2.26: )
+Shifting token ) (test_progetto/floor.k:2.26: )
+Entering state 101
+Stack now 0 2 12 17 41 68 94 103 49 57 82 101
+Reducing stack by rule 54 (line 210):
+   $1 = token id (test_progetto/floor.k:2.16-19: )
+   $2 = token ( (test_progetto/floor.k:2.20: )
+   $3 = nterm optexp (test_progetto/floor.k:2.21-25: )
+   $4 = token ) (test_progetto/floor.k:2.26: )
+-> $$ = nterm idexp (test_progetto/floor.k:2.16-26: )
+Entering state 43
+Stack now 0 2 12 17 41 68 94 103 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:2.16-26: )
+-> $$ = nterm exp (test_progetto/floor.k:2.16-26: )
+Entering state 107
+Stack now 0 2 12 17 41 68 94 103 107
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 51 ("}")
+Next token is token } (test_progetto/floor.k:3.1: )
+Reducing stack by rule 44 (line 194):
+   $1 = nterm condexp (test_progetto/floor.k:2.4-8: )
+   $2 = token ? (test_progetto/floor.k:2.10: )
+   $3 = nterm exp (test_progetto/floor.k:2.12: )
+   $4 = token : (test_progetto/floor.k:2.14: )
+   $5 = nterm exp (test_progetto/floor.k:2.16-26: )
+-> $$ = nterm expif (test_progetto/floor.k:2.4-26: )
+Entering state 40
+Stack now 0 2 12 17 40
+Reducing stack by rule 41 (line 187):
+   $1 = nterm expif (test_progetto/floor.k:2.4-26: )
+-> $$ = nterm exp (test_progetto/floor.k:2.4-26: )
+Entering state 39
+Stack now 0 2 12 17 39
+Next token is token } (test_progetto/floor.k:3.1: )
+Reducing stack by rule 20 (line 150):
+   $1 = nterm exp (test_progetto/floor.k:2.4-26: )
+-> $$ = nterm stmt (test_progetto/floor.k:2.4-26: )
+Entering state 32
+Stack now 0 2 12 17 32
+Next token is token } (test_progetto/floor.k:3.1: )
+Reducing stack by rule 14 (line 142):
+   $1 = nterm stmt (test_progetto/floor.k:2.4-26: )
+-> $$ = nterm stmts (test_progetto/floor.k:2.4-26: )
+Entering state 31
+Stack now 0 2 12 17 31
+Next token is token } (test_progetto/floor.k:3.1: )
+Shifting token } (test_progetto/floor.k:3.1: )
+Entering state 59
+Stack now 0 2 12 17 31 59
+Reducing stack by rule 28 (line 168):
+   $1 = token { (test_progetto/floor.k:1.15: )
+   $2 = nterm stmts (test_progetto/floor.k:2.4-26: )
+   $3 = token } (test_progetto/floor.k:3.1: )
+-> $$ = nterm block (test_progetto/floor.k:1.15-3.1: )
+Entering state 18
+Stack now 0 2 12 18
+Reducing stack by rule 8 (line 118):
+   $1 = token def (test_progetto/floor.k:1.1-3: )
+   $2 = nterm proto (test_progetto/floor.k:1.5-13: )
+   $3 = nterm block (test_progetto/floor.k:1.15-3.1: )
+-> $$ = nterm definition (test_progetto/floor.k:1.1-3.1: )
+Entering state 7
+Stack now 0 7
+Reducing stack by rule 5 (line 113):
+   $1 = nterm definition (test_progetto/floor.k:1.1-3.1: )
+-> $$ = nterm top (test_progetto/floor.k:1.1-3.1: )
+Entering state 6
+Stack now 0 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (test_progetto/floor.k:3.2: )
+Shifting token ; (test_progetto/floor.k:3.2: )
+Entering state 15
+Stack now 0 6 15
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 61 ("def")
+Next token is token def (test_progetto/floor.k:4.1-3: )
+Shifting token def (test_progetto/floor.k:4.1-3: )
+Entering state 2
+Stack now 0 6 15 2
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("intpart")
+Next token is token id (test_progetto/floor.k:4.5-11: )
+Shifting token id (test_progetto/floor.k:4.5-11: )
+Entering state 10
+Stack now 0 6 15 2 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (test_progetto/floor.k:4.12: )
+Shifting token ( (test_progetto/floor.k:4.12: )
+Entering state 16
+Stack now 0 6 15 2 10 16
+Reading a token
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:4.13: )
+Shifting token id (test_progetto/floor.k:4.13: )
+Entering state 20
+Stack now 0 6 15 2 10 16 20
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("acc")
+Next token is token id (test_progetto/floor.k:4.15-17: )
+Shifting token id (test_progetto/floor.k:4.15-17: )
+Entering state 20
+Stack now 0 6 15 2 10 16 20 20
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (test_progetto/floor.k:4.18: )
+Reducing stack by rule 12 (line 130):
+-> $$ = nterm idseq (test_progetto/floor.k:4.18: )
+Entering state 44
+Stack now 0 6 15 2 10 16 20 20 44
+Reducing stack by rule 13 (line 131):
+   $1 = token id (test_progetto/floor.k:4.15-17: )
+   $2 = nterm idseq (test_progetto/floor.k:4.18: )
+-> $$ = nterm idseq (test_progetto/floor.k:4.15-17: )
+Entering state 44
+Stack now 0 6 15 2 10 16 20 44
+Reducing stack by rule 13 (line 131):
+   $1 = token id (test_progetto/floor.k:4.13: )
+   $2 = nterm idseq (test_progetto/floor.k:4.15-17: )
+-> $$ = nterm idseq (test_progetto/floor.k:4.13-17: )
+Entering state 21
+Stack now 0 6 15 2 10 16 21
+Next token is token ) (test_progetto/floor.k:4.18: )
+Shifting token ) (test_progetto/floor.k:4.18: )
+Entering state 45
+Stack now 0 6 15 2 10 16 21 45
+Reducing stack by rule 10 (line 124):
+   $1 = token id (test_progetto/floor.k:4.5-11: )
+   $2 = token ( (test_progetto/floor.k:4.12: )
+   $3 = nterm idseq (test_progetto/floor.k:4.13-17: )
+   $4 = token ) (test_progetto/floor.k:4.18: )
+-> $$ = nterm proto (test_progetto/floor.k:4.5-18: )
+Entering state 12
+Stack now 0 6 15 2 12
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 50 ("{")
+Next token is token { (test_progetto/floor.k:4.20: )
+Shifting token { (test_progetto/floor.k:4.20: )
+Entering state 17
+Stack now 0 6 15 2 12 17
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("   ")
+--accepting rule at line 63 ("var")
+Next token is token var (test_progetto/floor.k:5.4-6: )
+Shifting token var (test_progetto/floor.k:5.4-6: )
+Entering state 25
+Stack now 0 6 15 2 12 17 25
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("y")
+Next token is token id (test_progetto/floor.k:5.8: )
+Shifting token id (test_progetto/floor.k:5.8: )
+Entering state 52
+Stack now 0 6 15 2 12 17 25 52
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (test_progetto/floor.k:5.10: )
+Shifting token = (test_progetto/floor.k:5.10: )
+Entering state 74
+Stack now 0 6 15 2 12 17 25 52 74
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:5.12: )
+Shifting token id (test_progetto/floor.k:5.12: )
+Entering state 49
+Stack now 0 6 15 2 12 17 25 52 74 49
+Reading a token
+--accepting rule at line 47 ("<")
+Next token is token < (test_progetto/floor.k:5.13: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:5.12: )
+-> $$ = nterm idexp (test_progetto/floor.k:5.12: )
+Entering state 43
+Stack now 0 6 15 2 12 17 25 52 74 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:5.12: )
+-> $$ = nterm exp (test_progetto/floor.k:5.12: )
+Entering state 97
+Stack now 0 6 15 2 12 17 25 52 74 97
+Next token is token < (test_progetto/floor.k:5.13: )
+Shifting token < (test_progetto/floor.k:5.13: )
+Entering state 66
+Stack now 0 6 15 2 12 17 25 52 74 97 66
+Reading a token
+--accepting rule at line 53 ("1")
+Next token is token number (test_progetto/floor.k:5.14: )
+Shifting token number (test_progetto/floor.k:5.14: )
+Entering state 30
+Stack now 0 6 15 2 12 17 25 52 74 97 66 30
+Reducing stack by rule 39 (line 185):
+   $1 = token number (test_progetto/floor.k:5.14: )
+-> $$ = nterm exp (test_progetto/floor.k:5.14: )
+Entering state 92
+Stack now 0 6 15 2 12 17 25 52 74 97 66 92
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 45 ("?")
+Next token is token ? (test_progetto/floor.k:5.16: )
+Reducing stack by rule 50 (line 204):
+   $1 = nterm exp (test_progetto/floor.k:5.12: )
+   $2 = token < (test_progetto/floor.k:5.13: )
+   $3 = nterm exp (test_progetto/floor.k:5.14: )
+-> $$ = nterm relexp (test_progetto/floor.k:5.12-14: )
+Entering state 42
+Stack now 0 6 15 2 12 17 25 52 74 42
+Next token is token ? (test_progetto/floor.k:5.16: )
+Reducing stack by rule 45 (line 197):
+   $1 = nterm relexp (test_progetto/floor.k:5.12-14: )
+-> $$ = nterm condexp (test_progetto/floor.k:5.12-14: )
+Entering state 41
+Stack now 0 6 15 2 12 17 25 52 74 41
+Next token is token ? (test_progetto/floor.k:5.16: )
+Shifting token ? (test_progetto/floor.k:5.16: )
+Entering state 68
+Stack now 0 6 15 2 12 17 25 52 74 41 68
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 53 ("0")
+Next token is token number (test_progetto/floor.k:5.18: )
+Shifting token number (test_progetto/floor.k:5.18: )
+Entering state 30
+Stack now 0 6 15 2 12 17 25 52 74 41 68 30
+Reducing stack by rule 39 (line 185):
+   $1 = token number (test_progetto/floor.k:5.18: )
+-> $$ = nterm exp (test_progetto/floor.k:5.18: )
+Entering state 94
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 46 (":")
+Next token is token : (test_progetto/floor.k:5.20: )
+Shifting token : (test_progetto/floor.k:5.20: )
+Entering state 103
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("pow2")
+Next token is token id (test_progetto/floor.k:5.22-25: )
+Shifting token id (test_progetto/floor.k:5.22-25: )
+Entering state 49
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (test_progetto/floor.k:5.26: )
+Shifting token ( (test_progetto/floor.k:5.26: )
+Entering state 57
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57
+Reading a token
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:5.27: )
+Shifting token id (test_progetto/floor.k:5.27: )
+Entering state 49
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 49
+Reading a token
+--accepting rule at line 44 (",")
+Next token is token "," (test_progetto/floor.k:5.28: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:5.27: )
+-> $$ = nterm idexp (test_progetto/floor.k:5.27: )
+Entering state 43
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:5.27: )
+-> $$ = nterm exp (test_progetto/floor.k:5.27: )
+Entering state 81
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 81
+Next token is token "," (test_progetto/floor.k:5.28: )
+Shifting token "," (test_progetto/floor.k:5.28: )
+Entering state 100
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 81 100
+Reading a token
+--accepting rule at line 53 ("1")
+Next token is token number (test_progetto/floor.k:5.29: )
+Shifting token number (test_progetto/floor.k:5.29: )
+Entering state 30
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 81 100 30
+Reducing stack by rule 39 (line 185):
+   $1 = token number (test_progetto/floor.k:5.29: )
+-> $$ = nterm exp (test_progetto/floor.k:5.29: )
+Entering state 81
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 81 100 81
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (test_progetto/floor.k:5.30: )
+Reducing stack by rule 57 (line 217):
+   $1 = nterm exp (test_progetto/floor.k:5.29: )
+-> $$ = nterm explist (test_progetto/floor.k:5.29: )
+Entering state 106
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 81 100 106
+Reducing stack by rule 58 (line 218):
+   $1 = nterm exp (test_progetto/floor.k:5.27: )
+   $2 = token "," (test_progetto/floor.k:5.28: )
+   $3 = nterm explist (test_progetto/floor.k:5.29: )
+-> $$ = nterm explist (test_progetto/floor.k:5.27-29: )
+Entering state 83
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 83
+Reducing stack by rule 56 (line 214):
+   $1 = nterm explist (test_progetto/floor.k:5.27-29: )
+-> $$ = nterm optexp (test_progetto/floor.k:5.27-29: )
+Entering state 82
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 82
+Next token is token ) (test_progetto/floor.k:5.30: )
+Shifting token ) (test_progetto/floor.k:5.30: )
+Entering state 101
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 49 57 82 101
+Reducing stack by rule 54 (line 210):
+   $1 = token id (test_progetto/floor.k:5.22-25: )
+   $2 = token ( (test_progetto/floor.k:5.26: )
+   $3 = nterm optexp (test_progetto/floor.k:5.27-29: )
+   $4 = token ) (test_progetto/floor.k:5.30: )
+-> $$ = nterm idexp (test_progetto/floor.k:5.22-30: )
+Entering state 43
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:5.22-30: )
+-> $$ = nterm exp (test_progetto/floor.k:5.22-30: )
+Entering state 107
+Stack now 0 6 15 2 12 17 25 52 74 41 68 94 103 107
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (test_progetto/floor.k:5.31: )
+Reducing stack by rule 44 (line 194):
+   $1 = nterm condexp (test_progetto/floor.k:5.12-14: )
+   $2 = token ? (test_progetto/floor.k:5.16: )
+   $3 = nterm exp (test_progetto/floor.k:5.18: )
+   $4 = token : (test_progetto/floor.k:5.20: )
+   $5 = nterm exp (test_progetto/floor.k:5.22-30: )
+-> $$ = nterm expif (test_progetto/floor.k:5.12-30: )
+Entering state 40
+Stack now 0 6 15 2 12 17 25 52 74 40
+Reducing stack by rule 41 (line 187):
+   $1 = nterm expif (test_progetto/floor.k:5.12-30: )
+-> $$ = nterm exp (test_progetto/floor.k:5.12-30: )
+Entering state 97
+Stack now 0 6 15 2 12 17 25 52 74 97
+Next token is token ; (test_progetto/floor.k:5.31: )
+Reducing stack by rule 43 (line 191):
+   $1 = token = (test_progetto/floor.k:5.10: )
+   $2 = nterm exp (test_progetto/floor.k:5.12-30: )
+-> $$ = nterm initexp (test_progetto/floor.k:5.10-30: )
+Entering state 75
+Stack now 0 6 15 2 12 17 25 52 75
+Reducing stack by rule 32 (line 176):
+   $1 = token var (test_progetto/floor.k:5.4-6: )
+   $2 = token id (test_progetto/floor.k:5.8: )
+   $3 = nterm initexp (test_progetto/floor.k:5.10-30: )
+-> $$ = nterm binding (test_progetto/floor.k:5.4-30: )
+Entering state 38
+Stack now 0 6 15 2 12 17 38
+Reducing stack by rule 30 (line 172):
+   $1 = nterm binding (test_progetto/floor.k:5.4-30: )
+-> $$ = nterm vardefs (test_progetto/floor.k:5.4-30: )
+Entering state 37
+Stack now 0 6 15 2 12 17 37
+Next token is token ; (test_progetto/floor.k:5.31: )
+Shifting token ; (test_progetto/floor.k:5.31: )
+Entering state 61
+Stack now 0 6 15 2 12 17 37 61
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("   ")
+--accepting rule at line 72 ("y")
+Next token is token id (test_progetto/floor.k:6.4: )
+Shifting token id (test_progetto/floor.k:6.4: )
+Entering state 29
+Stack now 0 6 15 2 12 17 37 61 29
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 48 ("==")
+Next token is token == (test_progetto/floor.k:6.6-7: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:6.4: )
+-> $$ = nterm idexp (test_progetto/floor.k:6.4: )
+Entering state 43
+Stack now 0 6 15 2 12 17 37 61 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:6.4: )
+-> $$ = nterm exp (test_progetto/floor.k:6.4: )
+Entering state 39
+Stack now 0 6 15 2 12 17 37 61 39
+Next token is token == (test_progetto/floor.k:6.6-7: )
+Shifting token == (test_progetto/floor.k:6.6-7: )
+Entering state 67
+Stack now 0 6 15 2 12 17 37 61 39 67
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 53 ("0")
+Next token is token number (test_progetto/floor.k:6.9: )
+Shifting token number (test_progetto/floor.k:6.9: )
+Entering state 30
+Stack now 0 6 15 2 12 17 37 61 39 67 30
+Reducing stack by rule 39 (line 185):
+   $1 = token number (test_progetto/floor.k:6.9: )
+-> $$ = nterm exp (test_progetto/floor.k:6.9: )
+Entering state 93
+Stack now 0 6 15 2 12 17 37 61 39 67 93
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 45 ("?")
+Next token is token ? (test_progetto/floor.k:6.11: )
+Reducing stack by rule 51 (line 205):
+   $1 = nterm exp (test_progetto/floor.k:6.4: )
+   $2 = token == (test_progetto/floor.k:6.6-7: )
+   $3 = nterm exp (test_progetto/floor.k:6.9: )
+-> $$ = nterm relexp (test_progetto/floor.k:6.4-9: )
+Entering state 42
+Stack now 0 6 15 2 12 17 37 61 42
+Next token is token ? (test_progetto/floor.k:6.11: )
+Reducing stack by rule 45 (line 197):
+   $1 = nterm relexp (test_progetto/floor.k:6.4-9: )
+-> $$ = nterm condexp (test_progetto/floor.k:6.4-9: )
+Entering state 41
+Stack now 0 6 15 2 12 17 37 61 41
+Next token is token ? (test_progetto/floor.k:6.11: )
+Shifting token ? (test_progetto/floor.k:6.11: )
+Entering state 68
+Stack now 0 6 15 2 12 17 37 61 41 68
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("acc")
+Next token is token id (test_progetto/floor.k:6.13-15: )
+Shifting token id (test_progetto/floor.k:6.13-15: )
+Entering state 49
+Stack now 0 6 15 2 12 17 37 61 41 68 49
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 46 (":")
+Next token is token : (test_progetto/floor.k:6.17: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:6.13-15: )
+-> $$ = nterm idexp (test_progetto/floor.k:6.13-15: )
+Entering state 43
+Stack now 0 6 15 2 12 17 37 61 41 68 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:6.13-15: )
+-> $$ = nterm exp (test_progetto/floor.k:6.13-15: )
+Entering state 94
+Stack now 0 6 15 2 12 17 37 61 41 68 94
+Next token is token : (test_progetto/floor.k:6.17: )
+Shifting token : (test_progetto/floor.k:6.17: )
+Entering state 103
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("intpart")
+Next token is token id (test_progetto/floor.k:6.19-25: )
+Shifting token id (test_progetto/floor.k:6.19-25: )
+Entering state 49
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (test_progetto/floor.k:6.26: )
+Shifting token ( (test_progetto/floor.k:6.26: )
+Entering state 57
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57
+Reading a token
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:6.27: )
+Shifting token id (test_progetto/floor.k:6.27: )
+Entering state 49
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 49
+Reading a token
+--accepting rule at line 37 ("-")
+Next token is token - (test_progetto/floor.k:6.28: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:6.27: )
+-> $$ = nterm idexp (test_progetto/floor.k:6.27: )
+Entering state 43
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:6.27: )
+-> $$ = nterm exp (test_progetto/floor.k:6.27: )
+Entering state 81
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81
+Next token is token - (test_progetto/floor.k:6.28: )
+Shifting token - (test_progetto/floor.k:6.28: )
+Entering state 62
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 62
+Reading a token
+--accepting rule at line 72 ("y")
+Next token is token id (test_progetto/floor.k:6.29: )
+Shifting token id (test_progetto/floor.k:6.29: )
+Entering state 49
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 62 49
+Reading a token
+--accepting rule at line 44 (",")
+Next token is token "," (test_progetto/floor.k:6.30: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:6.29: )
+-> $$ = nterm idexp (test_progetto/floor.k:6.29: )
+Entering state 43
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 62 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:6.29: )
+-> $$ = nterm exp (test_progetto/floor.k:6.29: )
+Entering state 88
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 62 88
+Next token is token "," (test_progetto/floor.k:6.30: )
+Reducing stack by rule 34 (line 180):
+   $1 = nterm exp (test_progetto/floor.k:6.27: )
+   $2 = token - (test_progetto/floor.k:6.28: )
+   $3 = nterm exp (test_progetto/floor.k:6.29: )
+-> $$ = nterm exp (test_progetto/floor.k:6.27-29: )
+Entering state 81
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81
+Next token is token "," (test_progetto/floor.k:6.30: )
+Shifting token "," (test_progetto/floor.k:6.30: )
+Entering state 100
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100
+Reading a token
+--accepting rule at line 72 ("acc")
+Next token is token id (test_progetto/floor.k:6.31-33: )
+Shifting token id (test_progetto/floor.k:6.31-33: )
+Entering state 49
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 49
+Reading a token
+--accepting rule at line 38 ("+")
+Next token is token + (test_progetto/floor.k:6.34: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:6.31-33: )
+-> $$ = nterm idexp (test_progetto/floor.k:6.31-33: )
+Entering state 43
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:6.31-33: )
+-> $$ = nterm exp (test_progetto/floor.k:6.31-33: )
+Entering state 81
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 81
+Next token is token + (test_progetto/floor.k:6.34: )
+Shifting token + (test_progetto/floor.k:6.34: )
+Entering state 63
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 81 63
+Reading a token
+--accepting rule at line 72 ("y")
+Next token is token id (test_progetto/floor.k:6.35: )
+Shifting token id (test_progetto/floor.k:6.35: )
+Entering state 49
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 81 63 49
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (test_progetto/floor.k:6.36: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:6.35: )
+-> $$ = nterm idexp (test_progetto/floor.k:6.35: )
+Entering state 43
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 81 63 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:6.35: )
+-> $$ = nterm exp (test_progetto/floor.k:6.35: )
+Entering state 89
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 81 63 89
+Next token is token ) (test_progetto/floor.k:6.36: )
+Reducing stack by rule 33 (line 179):
+   $1 = nterm exp (test_progetto/floor.k:6.31-33: )
+   $2 = token + (test_progetto/floor.k:6.34: )
+   $3 = nterm exp (test_progetto/floor.k:6.35: )
+-> $$ = nterm exp (test_progetto/floor.k:6.31-35: )
+Entering state 81
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 81
+Next token is token ) (test_progetto/floor.k:6.36: )
+Reducing stack by rule 57 (line 217):
+   $1 = nterm exp (test_progetto/floor.k:6.31-35: )
+-> $$ = nterm explist (test_progetto/floor.k:6.31-35: )
+Entering state 106
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 81 100 106
+Reducing stack by rule 58 (line 218):
+   $1 = nterm exp (test_progetto/floor.k:6.27-29: )
+   $2 = token "," (test_progetto/floor.k:6.30: )
+   $3 = nterm explist (test_progetto/floor.k:6.31-35: )
+-> $$ = nterm explist (test_progetto/floor.k:6.27-35: )
+Entering state 83
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 83
+Reducing stack by rule 56 (line 214):
+   $1 = nterm explist (test_progetto/floor.k:6.27-35: )
+-> $$ = nterm optexp (test_progetto/floor.k:6.27-35: )
+Entering state 82
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 82
+Next token is token ) (test_progetto/floor.k:6.36: )
+Shifting token ) (test_progetto/floor.k:6.36: )
+Entering state 101
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 49 57 82 101
+Reducing stack by rule 54 (line 210):
+   $1 = token id (test_progetto/floor.k:6.19-25: )
+   $2 = token ( (test_progetto/floor.k:6.26: )
+   $3 = nterm optexp (test_progetto/floor.k:6.27-35: )
+   $4 = token ) (test_progetto/floor.k:6.36: )
+-> $$ = nterm idexp (test_progetto/floor.k:6.19-36: )
+Entering state 43
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:6.19-36: )
+-> $$ = nterm exp (test_progetto/floor.k:6.19-36: )
+Entering state 107
+Stack now 0 6 15 2 12 17 37 61 41 68 94 103 107
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 51 ("}")
+Next token is token } (test_progetto/floor.k:7.1: )
+Reducing stack by rule 44 (line 194):
+   $1 = nterm condexp (test_progetto/floor.k:6.4-9: )
+   $2 = token ? (test_progetto/floor.k:6.11: )
+   $3 = nterm exp (test_progetto/floor.k:6.13-15: )
+   $4 = token : (test_progetto/floor.k:6.17: )
+   $5 = nterm exp (test_progetto/floor.k:6.19-36: )
+-> $$ = nterm expif (test_progetto/floor.k:6.4-36: )
+Entering state 40
+Stack now 0 6 15 2 12 17 37 61 40
+Reducing stack by rule 41 (line 187):
+   $1 = nterm expif (test_progetto/floor.k:6.4-36: )
+-> $$ = nterm exp (test_progetto/floor.k:6.4-36: )
+Entering state 39
+Stack now 0 6 15 2 12 17 37 61 39
+Next token is token } (test_progetto/floor.k:7.1: )
+Reducing stack by rule 20 (line 150):
+   $1 = nterm exp (test_progetto/floor.k:6.4-36: )
+-> $$ = nterm stmt (test_progetto/floor.k:6.4-36: )
+Entering state 32
+Stack now 0 6 15 2 12 17 37 61 32
+Next token is token } (test_progetto/floor.k:7.1: )
+Reducing stack by rule 14 (line 142):
+   $1 = nterm stmt (test_progetto/floor.k:6.4-36: )
+-> $$ = nterm stmts (test_progetto/floor.k:6.4-36: )
+Entering state 86
+Stack now 0 6 15 2 12 17 37 61 86
+Next token is token } (test_progetto/floor.k:7.1: )
+Shifting token } (test_progetto/floor.k:7.1: )
+Entering state 102
+Stack now 0 6 15 2 12 17 37 61 86 102
+Reducing stack by rule 29 (line 169):
+   $1 = token { (test_progetto/floor.k:4.20: )
+   $2 = nterm vardefs (test_progetto/floor.k:5.4-30: )
+   $3 = token ; (test_progetto/floor.k:5.31: )
+   $4 = nterm stmts (test_progetto/floor.k:6.4-36: )
+   $5 = token } (test_progetto/floor.k:7.1: )
+-> $$ = nterm block (test_progetto/floor.k:4.20-7.1: )
+Entering state 18
+Stack now 0 6 15 2 12 18
+Reducing stack by rule 8 (line 118):
+   $1 = token def (test_progetto/floor.k:4.1-3: )
+   $2 = nterm proto (test_progetto/floor.k:4.5-18: )
+   $3 = nterm block (test_progetto/floor.k:4.20-7.1: )
+-> $$ = nterm definition (test_progetto/floor.k:4.1-7.1: )
+Entering state 7
+Stack now 0 6 15 7
+Reducing stack by rule 5 (line 113):
+   $1 = nterm definition (test_progetto/floor.k:4.1-7.1: )
+-> $$ = nterm top (test_progetto/floor.k:4.1-7.1: )
+Entering state 6
+Stack now 0 6 15 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (test_progetto/floor.k:7.2: )
+Shifting token ; (test_progetto/floor.k:7.2: )
+Entering state 15
+Stack now 0 6 15 6 15
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 61 ("def")
+Next token is token def (test_progetto/floor.k:8.1-3: )
+Shifting token def (test_progetto/floor.k:8.1-3: )
+Entering state 2
+Stack now 0 6 15 6 15 2
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 72 ("floor")
+Next token is token id (test_progetto/floor.k:8.5-9: )
+Shifting token id (test_progetto/floor.k:8.5-9: )
+Entering state 10
+Stack now 0 6 15 6 15 2 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (test_progetto/floor.k:8.10: )
+Shifting token ( (test_progetto/floor.k:8.10: )
+Entering state 16
+Stack now 0 6 15 6 15 2 10 16
+Reading a token
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:8.11: )
+Shifting token id (test_progetto/floor.k:8.11: )
+Entering state 20
+Stack now 0 6 15 6 15 2 10 16 20
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (test_progetto/floor.k:8.12: )
+Reducing stack by rule 12 (line 130):
+-> $$ = nterm idseq (test_progetto/floor.k:8.12: )
+Entering state 44
+Stack now 0 6 15 6 15 2 10 16 20 44
+Reducing stack by rule 13 (line 131):
+   $1 = token id (test_progetto/floor.k:8.11: )
+   $2 = nterm idseq (test_progetto/floor.k:8.12: )
+-> $$ = nterm idseq (test_progetto/floor.k:8.11: )
+Entering state 21
+Stack now 0 6 15 6 15 2 10 16 21
+Next token is token ) (test_progetto/floor.k:8.12: )
+Shifting token ) (test_progetto/floor.k:8.12: )
+Entering state 45
+Stack now 0 6 15 6 15 2 10 16 21 45
+Reducing stack by rule 10 (line 124):
+   $1 = token id (test_progetto/floor.k:8.5-9: )
+   $2 = token ( (test_progetto/floor.k:8.10: )
+   $3 = nterm idseq (test_progetto/floor.k:8.11: )
+   $4 = token ) (test_progetto/floor.k:8.12: )
+-> $$ = nterm proto (test_progetto/floor.k:8.5-12: )
+Entering state 12
+Stack now 0 6 15 6 15 2 12
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 50 ("{")
+Next token is token { (test_progetto/floor.k:8.14: )
+Shifting token { (test_progetto/floor.k:8.14: )
+Entering state 17
+Stack now 0 6 15 6 15 2 12 17
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("   ")
+--accepting rule at line 72 ("intpart")
+Next token is token id (test_progetto/floor.k:9.4-10: )
+Shifting token id (test_progetto/floor.k:9.4-10: )
+Entering state 29
+Stack now 0 6 15 6 15 2 12 17 29
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (test_progetto/floor.k:9.11: )
+Shifting token ( (test_progetto/floor.k:9.11: )
+Entering state 57
+Stack now 0 6 15 6 15 2 12 17 29 57
+Reading a token
+--accepting rule at line 72 ("x")
+Next token is token id (test_progetto/floor.k:9.12: )
+Shifting token id (test_progetto/floor.k:9.12: )
+Entering state 49
+Stack now 0 6 15 6 15 2 12 17 29 57 49
+Reading a token
+--accepting rule at line 44 (",")
+Next token is token "," (test_progetto/floor.k:9.13: )
+Reducing stack by rule 52 (line 208):
+   $1 = token id (test_progetto/floor.k:9.12: )
+-> $$ = nterm idexp (test_progetto/floor.k:9.12: )
+Entering state 43
+Stack now 0 6 15 6 15 2 12 17 29 57 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:9.12: )
+-> $$ = nterm exp (test_progetto/floor.k:9.12: )
+Entering state 81
+Stack now 0 6 15 6 15 2 12 17 29 57 81
+Next token is token "," (test_progetto/floor.k:9.13: )
+Shifting token "," (test_progetto/floor.k:9.13: )
+Entering state 100
+Stack now 0 6 15 6 15 2 12 17 29 57 81 100
+Reading a token
+--accepting rule at line 53 ("0")
+Next token is token number (test_progetto/floor.k:9.14: )
+Shifting token number (test_progetto/floor.k:9.14: )
+Entering state 30
+Stack now 0 6 15 6 15 2 12 17 29 57 81 100 30
+Reducing stack by rule 39 (line 185):
+   $1 = token number (test_progetto/floor.k:9.14: )
+-> $$ = nterm exp (test_progetto/floor.k:9.14: )
+Entering state 81
+Stack now 0 6 15 6 15 2 12 17 29 57 81 100 81
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (test_progetto/floor.k:9.15: )
+Reducing stack by rule 57 (line 217):
+   $1 = nterm exp (test_progetto/floor.k:9.14: )
+-> $$ = nterm explist (test_progetto/floor.k:9.14: )
+Entering state 106
+Stack now 0 6 15 6 15 2 12 17 29 57 81 100 106
+Reducing stack by rule 58 (line 218):
+   $1 = nterm exp (test_progetto/floor.k:9.12: )
+   $2 = token "," (test_progetto/floor.k:9.13: )
+   $3 = nterm explist (test_progetto/floor.k:9.14: )
+-> $$ = nterm explist (test_progetto/floor.k:9.12-14: )
+Entering state 83
+Stack now 0 6 15 6 15 2 12 17 29 57 83
+Reducing stack by rule 56 (line 214):
+   $1 = nterm explist (test_progetto/floor.k:9.12-14: )
+-> $$ = nterm optexp (test_progetto/floor.k:9.12-14: )
+Entering state 82
+Stack now 0 6 15 6 15 2 12 17 29 57 82
+Next token is token ) (test_progetto/floor.k:9.15: )
+Shifting token ) (test_progetto/floor.k:9.15: )
+Entering state 101
+Stack now 0 6 15 6 15 2 12 17 29 57 82 101
+Reducing stack by rule 54 (line 210):
+   $1 = token id (test_progetto/floor.k:9.4-10: )
+   $2 = token ( (test_progetto/floor.k:9.11: )
+   $3 = nterm optexp (test_progetto/floor.k:9.12-14: )
+   $4 = token ) (test_progetto/floor.k:9.15: )
+-> $$ = nterm idexp (test_progetto/floor.k:9.4-15: )
+Entering state 43
+Stack now 0 6 15 6 15 2 12 17 43
+Reducing stack by rule 37 (line 183):
+   $1 = nterm idexp (test_progetto/floor.k:9.4-15: )
+-> $$ = nterm exp (test_progetto/floor.k:9.4-15: )
+Entering state 39
+Stack now 0 6 15 6 15 2 12 17 39
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 51 ("}")
+Next token is token } (test_progetto/floor.k:10.1: )
+Reducing stack by rule 20 (line 150):
+   $1 = nterm exp (test_progetto/floor.k:9.4-15: )
+-> $$ = nterm stmt (test_progetto/floor.k:9.4-15: )
+Entering state 32
+Stack now 0 6 15 6 15 2 12 17 32
+Next token is token } (test_progetto/floor.k:10.1: )
+Reducing stack by rule 14 (line 142):
+   $1 = nterm stmt (test_progetto/floor.k:9.4-15: )
+-> $$ = nterm stmts (test_progetto/floor.k:9.4-15: )
+Entering state 31
+Stack now 0 6 15 6 15 2 12 17 31
+Next token is token } (test_progetto/floor.k:10.1: )
+Shifting token } (test_progetto/floor.k:10.1: )
+Entering state 59
+Stack now 0 6 15 6 15 2 12 17 31 59
+Reducing stack by rule 28 (line 168):
+   $1 = token { (test_progetto/floor.k:8.14: )
+   $2 = nterm stmts (test_progetto/floor.k:9.4-15: )
+   $3 = token } (test_progetto/floor.k:10.1: )
+-> $$ = nterm block (test_progetto/floor.k:8.14-10.1: )
+Entering state 18
+Stack now 0 6 15 6 15 2 12 18
+Reducing stack by rule 8 (line 118):
+   $1 = token def (test_progetto/floor.k:8.1-3: )
+   $2 = nterm proto (test_progetto/floor.k:8.5-12: )
+   $3 = nterm block (test_progetto/floor.k:8.14-10.1: )
+-> $$ = nterm definition (test_progetto/floor.k:8.1-10.1: )
+Entering state 7
+Stack now 0 6 15 6 15 7
+Reducing stack by rule 5 (line 113):
+   $1 = nterm definition (test_progetto/floor.k:8.1-10.1: )
+-> $$ = nterm top (test_progetto/floor.k:8.1-10.1: )
+Entering state 6
+Stack now 0 6 15 6 15 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (test_progetto/floor.k:10.2: )
+Shifting token ; (test_progetto/floor.k:10.2: )
+Entering state 15
+Stack now 0 6 15 6 15 6 15
+Reading a token
+--(end of buffer or a NUL)
+--accepting rule at line 35 ("
+")
+--(end of buffer or a NUL)
+--EOF (start condition 0)
+Next token is token end of file (test_progetto/floor.k:11.1: )
+Reducing stack by rule 2 (line 108):
+-> $$ = nterm program (test_progetto/floor.k:10.3: )
+Entering state 19
+Stack now 0 6 15 6 15 6 15 19
+Reducing stack by rule 3 (line 109):
+   $1 = nterm top (test_progetto/floor.k:8.1-10.1: )
+   $2 = token ; (test_progetto/floor.k:10.2: )
+   $3 = nterm program (test_progetto/floor.k:10.3: )
+-> $$ = nterm program (test_progetto/floor.k:8.1-10.2: )
+Entering state 19
+Stack now 0 6 15 6 15 19
+Reducing stack by rule 3 (line 109):
+   $1 = nterm top (test_progetto/floor.k:4.1-7.1: )
+   $2 = token ; (test_progetto/floor.k:7.2: )
+   $3 = nterm program (test_progetto/floor.k:8.1-10.2: )
+-> $$ = nterm program (test_progetto/floor.k:4.1-10.2: )
+Entering state 19
+Stack now 0 6 15 19
+Reducing stack by rule 3 (line 109):
+   $1 = nterm top (test_progetto/floor.k:1.1-3.1: )
+   $2 = token ; (test_progetto/floor.k:3.2: )
+   $3 = nterm program (test_progetto/floor.k:4.1-10.2: )
+-> $$ = nterm program (test_progetto/floor.k:1.1-10.2: )
+Entering state 5
+Stack now 0 5
+Reducing stack by rule 1 (line 105):
+   $1 = nterm program (test_progetto/floor.k:1.1-10.2: )
+-> $$ = nterm startsymb (test_progetto/floor.k:1.1-10.2: )
+Entering state 4
+Stack now 0 4
+Next token is token end of file (test_progetto/floor.k:11.1: )
+Shifting token end of file (test_progetto/floor.k:11.1: )
+Entering state 14
+Stack now 0 4 14
+Stack now 0 4 14
+Cleanup: popping token end of file (test_progetto/floor.k:11.1: )
+Cleanup: popping nterm startsymb (test_progetto/floor.k:1.1-10.2: )
+define double @pow2(double %x, double %i) {
+entry:
+  %i2 = alloca double, align 8
+  %x1 = alloca double, align 8
+  store double %x, ptr %x1, align 8
+  store double %i, ptr %i2, align 8
+  %x3 = load double, ptr %x1, align 8
+  %i4 = load double, ptr %i2, align 8
+  %mulres = fmul double 2.000000e+00, %i4
+  %lttest = fcmp ult double %x3, %mulres
+  br i1 %lttest, label %trueexp, label %falseexp
+
+trueexp:                                          ; preds = %entry
+  %i5 = load double, ptr %i2, align 8
+  br label %endcond
+
+falseexp:                                         ; preds = %entry
+  %x6 = load double, ptr %x1, align 8
+  %i7 = load double, ptr %i2, align 8
+  %mulres8 = fmul double 2.000000e+00, %i7
+  %calltmp = call double @pow2(double %x6, double %mulres8)
+  br label %endcond
+
+endcond:                                          ; preds = %falseexp, %trueexp
+  %condval = phi double [ %i5, %trueexp ], [ %calltmp, %falseexp ]
+  ret double %condval
+}
+
+define double @intpart(double %x, double %acc) {
+entry:
+  %y = alloca double, align 8
+  %acc2 = alloca double, align 8
+  %x1 = alloca double, align 8
+  store double %x, ptr %x1, align 8
+  store double %acc, ptr %acc2, align 8
+  %x3 = load double, ptr %x1, align 8
+  %lttest = fcmp ult double %x3, 1.000000e+00
+  br i1 %lttest, label %trueexp, label %falseexp
+
+trueexp:                                          ; preds = %entry
+  br label %endcond
+
+falseexp:                                         ; preds = %entry
+  %x4 = load double, ptr %x1, align 8
+  %calltmp = call double @pow2(double %x4, double 1.000000e+00)
+  br label %endcond
+
+endcond:                                          ; preds = %falseexp, %trueexp
+  %condval = phi double [ 0.000000e+00, %trueexp ], [ %calltmp, %falseexp ]
+  store double %condval, ptr %y, align 8
+  %y5 = load double, ptr %y, align 8
+  %eqtest = fcmp ueq double %y5, 0.000000e+00
+  br i1 %eqtest, label %trueexp6, label %falseexp8
+
+trueexp6:                                         ; preds = %endcond
+  %acc7 = load double, ptr %acc2, align 8
+  br label %endcond14
+
+falseexp8:                                        ; preds = %endcond
+  %x9 = load double, ptr %x1, align 8
+  %y10 = load double, ptr %y, align 8
+  %subres = fsub double %x9, %y10
+  %acc11 = load double, ptr %acc2, align 8
+  %y12 = load double, ptr %y, align 8
+  %addres = fadd double %acc11, %y12
+  %calltmp13 = call double @intpart(double %subres, double %addres)
+  br label %endcond14
+
+endcond14:                                        ; preds = %falseexp8, %trueexp6
+  %condval15 = phi double [ %acc7, %trueexp6 ], [ %calltmp13, %falseexp8 ]
+  ret double %condval15
+}
+
+define double @floor(double %x) {
+entry:
+  %x1 = alloca double, align 8
+  store double %x, ptr %x1, align 8
+  %x2 = load double, ptr %x1, align 8
+  %calltmp = call double @intpart(double %x2, double 0.000000e+00)
+  ret double %calltmp
+}
+

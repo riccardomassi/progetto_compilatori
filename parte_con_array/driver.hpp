@@ -225,15 +225,15 @@ public:
   Value *codegen(driver& drv) override;
 };
 
-/// BoolExprAST - Classe che rappresenta le espressioni booleane
-class BoolExprAST : public ExprAST {
+/// BooleanExprAST - Classe per la rappresentazione di espressioni booleane
+class BooleanExprAST : public ExprAST {
 private:
-  std::string Op;
+  char Op;
   ExprAST* LHS;
   ExprAST* RHS;
 
 public:
-  BoolExprAST(std::string Op, ExprAST* LHS, ExprAST* RHS = nullptr);
+  BooleanExprAST(char Op, ExprAST* LHS, ExprAST* RHS=nullptr);
   Value *codegen(driver& drv) override;
 };
 

@@ -103,7 +103,6 @@ lexval VariableExprAST::getLexVal() const {
 // l'istruzione ma è anche il registro, vista la corrispodenza 1-1 fra le due nozioni), (3)
 // il nome del registro in cui verrà trasferito il valore dalla memoria
 Value *VariableExprAST::codegen(driver& drv) {
-  
   AllocaInst* A = drv.NamedValues[Name];
 
   if(!A) {
@@ -244,15 +243,18 @@ Value* IfExprAST::codegen(driver& drv) {
     // incondizionato al blocco merge
     builder->SetInsertPoint(FalseBB);
     
-    Value *FalseV = FalseExp->codegen(drv);
-    if (!FalseV)
-       return nullptr;
+    Value *FalseV;
+    if (FalseExp) {
+        FalseV = FalseExp->codegen(drv);
+        if (!FalseV)
+            return nullptr;
+    } else {
+        // Se non c'è il ramo false, usare un valore predefinito
+        FalseV = ConstantFP::get(Type::getDoubleTy(*context), 0.0);
+    }
     builder->CreateBr(MergeBB);
-    
-    // Esattamente per la ragione spiegata sopra (ovvero il possibile inserimento
-    // di nuovi blocchi da parte della chiamata di codegen in FalseExp), andiamo ora
-    // a recuperare il blocco corrente 
     FalseBB = builder->GetInsertBlock();
+    
     function->insert(function->end(), MergeBB);
     
     // Andiamo dunque a generare il codice per la parte dove i due "flussi"
@@ -526,20 +528,17 @@ Value* AssignmentExprAST::codegen(driver& drv) {
 }
 
 
+/*********************** For Expression Tree ***********************/
 ForExprAST::ForExprAST(RootAST* Init, ExprAST* CondExp, AssignmentExprAST* Assignment, ExprAST* Statement): 
   Init(Init), CondExp(CondExp), Assignment(Assignment), Statement(Statement) {};
 
 Value* ForExprAST::codegen(driver& drv) {
-
-
   //Genera i BB nella funzione attuale, inserisco subito quello responsabile per l'inizalizzazione;
   Function *function = builder->GetInsertBlock()->getParent();
   BasicBlock *EntryBB =  BasicBlock::Create(*context, "for_entry",function);
   BasicBlock *CondBB = BasicBlock::Create(*context,"for_condition");
   BasicBlock *LoopBB = BasicBlock::Create(*context, "for_body");
   BasicBlock *ExitBB = BasicBlock::Create(*context, "for_exit");
-
-
 
   //Creo il branch incodizionato tra function e EntryBB
   builder->CreateBr(EntryBB);
@@ -613,7 +612,6 @@ Value* BooleanExprAST::codegen(driver& drv) {
   Value *R = RHS ? RHS->codegen(drv) : nullptr;
   if(!L) return nullptr;
 
-
   switch(Op){
     case 'A':
       return builder->CreateAnd(L,R,"andres");
@@ -625,5 +623,4 @@ Value* BooleanExprAST::codegen(driver& drv) {
       std::cout << Op << std::endl;
       return LogErrorV("Operatore booleano non supportato");
   }
-    
 };

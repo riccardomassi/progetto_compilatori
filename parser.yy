@@ -102,7 +102,7 @@
 %start startsymb;
 
 startsymb:
-program                 { drv.root = $1; }
+  program                 { drv.root = $1; }
 
 program:
   %empty                { $$ = new SeqAST(nullptr,nullptr); }
@@ -121,7 +121,7 @@ external:
   "extern" proto        { $$ = $2; };
 
 proto:
-  "id" "(" idseq ")"    { $$ = new PrototypeAST($1,$3);  };
+  "id" "(" idseq ")"    { $$ = new PrototypeAST($1,$3); };
 
 globalvar:
   "global" "id"         { $$ = new GlobalAST($2);};
@@ -133,9 +133,10 @@ idseq:
 %left ":";
 %left "<" "==";
 %left "+" "-";
+%left "*" "/";
+
 %left "not";
 %left "and" "or";
-%left "*" "/";
 
 stmts:
   stmt                  { $$ = std::vector<ExprAST*>{$1}; }
@@ -149,15 +150,15 @@ stmt:
 | exp                   { $$ = $1; };
 
 ifstmt:
-  "if" "(" condexp ")" stmt             { $$ = new IfExprAST($3,$5);}
-| "if" "(" condexp ")" stmt "else" stmt { $$ = new IfExprAST($3,$5,$7);};
+  "if" "(" condexp ")" stmt             { $$ = new IfExprAST($3,$5); }
+| "if" "(" condexp ")" stmt "else" stmt { $$ = new IfExprAST($3,$5,$7); };
 
 forstmt:
   "for" "(" init ";" condexp ";" assignment ")" stmt { $$ = new ForExprAST($3,$5,$7,$9);};
 
 init:
-  binding { $$ = $1; }
-| assignment { $$ = $1; };
+  binding     { $$ = $1; }
+| assignment  { $$ = $1; };
 
 assignment:
   "id" "=" exp { $$ = new AssignmentExprAST($1,$3);}
@@ -182,6 +183,7 @@ exp:
 | idexp                 { $$ = $1; }
 | "(" exp ")"           { $$ = $2; }
 | "number"              { $$ = new NumberExprAST($1); }
+| "-" "number"          { $$ = new BinaryExprAST('*',new NumberExprAST($2),new NumberExprAST(-1.0));}
 | expif                 { $$ = $1; };               
 
 initexp:
@@ -204,7 +206,7 @@ relexp:
 
 idexp:
   "id"                  { $$ = new VariableExprAST($1); }
-| "-" "id"              { $$ = new BinaryExprAST('*',new VariableExprAST($2),new NumberExprAST(-1.0));}
+| "-" "id"              { $$ = new BinaryExprAST('*',new VariableExprAST($2),new NumberExprAST(-1.0)); }
 | "id" "(" optexp ")"   { $$ = new CallExprAST($1,$3); };
 
 optexp:

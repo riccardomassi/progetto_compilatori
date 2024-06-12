@@ -125,12 +125,12 @@ Value *VariableExprAST::codegen(driver& drv) {
       } else {
         // Se l'array è stato definito come globale, allora si restituisce il valore all'indice
         Value *ElemPtr = builder->CreateInBoundsGEP(gvar->getValueType(), gvar, intIndexVal, Name + "_idx");
-        return builder->CreateLoad(gvar->getValueType(), ElemPtr, Name.c_str());
+        return builder->CreateLoad(gvar->getValueType()->getArrayElementType(), ElemPtr, Name.c_str());
       }
     } else {
       // Se l'array è stato definito come parametro, allora si restituisce il valore all'indice
       Value *ElemPtr = builder->CreateInBoundsGEP(A->getAllocatedType(), A, intIndexVal, Name + "_idx");
-      return builder->CreateLoad(A->getAllocatedType(), ElemPtr, Name.c_str());
+      return builder->CreateLoad(A->getAllocatedType()->getArrayElementType(), ElemPtr, Name.c_str());
     }
   } else {
     AllocaInst *A = drv.NamedValues[Name];
@@ -229,7 +229,7 @@ Value* CallExprAST::codegen(driver& drv) {
 /************************* If Expression Tree *************************/
 IfExprAST::IfExprAST(ExprAST* Cond, ExprAST* TrueExp, ExprAST* FalseExp):
    Cond(Cond), TrueExp(TrueExp), FalseExp(FalseExp) {};
-   
+
 Value* IfExprAST::codegen(driver& drv) {
     // Viene dapprima generato il codice per valutare la condizione, che
     // memorizza il risultato (di tipo i1, dunque booleano) nel registro SSA 
@@ -242,73 +242,48 @@ Value* IfExprAST::codegen(driver& drv) {
     // vanno creati i corrispondenti basic block nella funzione attuale
     // (ovvero la funzione di cui fa parte il corrente blocco di inserimento)
     Function *function = builder->GetInsertBlock()->getParent();
-    BasicBlock *TrueBB =  BasicBlock::Create(*context, "trueexp", function);
-    // Il blocco TrueBB viene inserito nella funzione dopo il blocco corrente
+    BasicBlock *TrueBB = BasicBlock::Create(*context, "trueexp", function);
     BasicBlock *FalseBB = BasicBlock::Create(*context, "falseexp");
     BasicBlock *MergeBB = BasicBlock::Create(*context, "endcond");
-    // Gli altri due blocchi non vengono ancora inseriti perché le istruzioni
-    // previste nel "ramo" true del condizionale potrebbe dare luogo alla creazione
-    // di altri blocchi, che naturalmente andrebbero inseriti prima di FalseBB
-    
-    // Ora possiamo crere l'istruzione di salto condizionato
+
+    // Ora possiamo creare l'istruzione di salto condizionato
     builder->CreateCondBr(CondV, TrueBB, FalseBB);
     
-    // "Posizioniamo" il builder all'inizio del blocco true, 
-    // generiamo ricorsivamente il codice da eseguire in caso di
-    // condizione vera e, in chiusura di blocco, generiamo il saldo 
-    // incondizionato al blocco merge
+    // Generiamo il codice per il blocco true
     builder->SetInsertPoint(TrueBB);
     Value *TrueV = TrueExp->codegen(drv);
     if (!TrueV)
        return nullptr;
     builder->CreateBr(MergeBB);
-    
-    // Come già ricordato, la chiamata di codegen in TrueExp potrebbe aver inserito 
-    // altri blocchi (nel caso in cui la parte trueexp sia a sua volta un condizionale).
-    // Ne consegue che il blocco corrente potrebbe non coincidere più con TrueBB.
-    // Il branch alla parte merge deve però essere effettuato dal blocco corrente,
-    // che dunque va recuperato. Ed è fondamentale sapere da quale blocco origina
-    // il salto perché tale informazione verrà utilizzata da un'istruzione PHI.
-    // Nel caso in cui non sia stato inserito alcun nuovo blocco, la seguente
-    // istruzione corrisponde ad una NO-OP
     TrueBB = builder->GetInsertBlock();
-    function->insert(function->end(), FalseBB);
     
-    // "Posizioniamo" il builder all'inizio del blocco false, 
-    // generiamo ricorsivamente il codice da eseguire in caso di
-    // condizione falsa e, in chiusura di blocco, generiamo il saldo 
-    // incondizionato al blocco merge
+    // Generiamo il codice per il blocco false
+    function->insert(function->end(), FalseBB);
     builder->SetInsertPoint(FalseBB);
     
-    Value *FalseV = FalseExp->codegen(drv);
-    if (!FalseV)
-       return nullptr;
+    Value *FalseV;
+    if (FalseExp) {
+        FalseV = FalseExp->codegen(drv);
+        if (!FalseV)
+            return nullptr;
+    } else {
+        // Se non c'è il ramo false, usare un valore predefinito
+        FalseV = ConstantFP::get(Type::getDoubleTy(*context), 0.0);
+    }
     builder->CreateBr(MergeBB);
-    
-    // Esattamente per la ragione spiegata sopra (ovvero il possibile inserimento
-    // di nuovi blocchi da parte della chiamata di codegen in FalseExp), andiamo ora
-    // a recuperare il blocco corrente 
     FalseBB = builder->GetInsertBlock();
-    function->insert(function->end(), MergeBB);
     
-    // Andiamo dunque a generare il codice per la parte dove i due "flussi"
-    // di esecuzione si riuniscono. Impostiamo correttamente il builder
+    function->insert(function->end(), MergeBB);
     builder->SetInsertPoint(MergeBB);
-  
-    // Il codice di riunione dei flussi è una "semplice" istruzione PHI: 
-    //a seconda del blocco da cui arriva il flusso, TrueBB o FalseBB, il valore
-    // del costrutto condizionale (si ricordi che si tratta di un "expression if")
-    // deve essere copiato (in un nuovo registro SSA) da TrueV o da FalseV
-    // La creazione di un'istruzione PHI avviene però in due passi, in quanto
-    // il numero di "flussi entranti" non è fissato.
-    // 1) Dapprima si crea il nodo PHI specificando quanti sono i possibili nodi sorgente
-    // 2) Per ogni possibile nodo sorgente, viene poi inserita l'etichetta e il registro
-    //    SSA da cui prelevare il valore 
-    PHINode *PN = builder->CreatePHI(Type::getDoubleTy(*context), 2, "condval");
+
+    // Creiamo il nodo PHI
+    PHINode *PN = builder->CreatePHI(TrueV->getType(), 2, "condval");
     PN->addIncoming(TrueV, TrueBB);
     PN->addIncoming(FalseV, FalseBB);
+    
     return PN;
 };
+
 
 /********************** Block Expression Tree *********************/
 BlockExprAST::BlockExprAST(std::vector<VarBindingAST*> Def, std::vector<ExprAST*> StmtList): 
@@ -723,53 +698,33 @@ llvm::Value *ForExprAST::codegen(driver& drv) {
     // Restore della variabile in Init
     if(AllocaTmp) drv.NamedValues[Node->getName()] = AllocaTmp;
 
-    return BodyVal;
+    return llvm::Constant::getNullValue(Type::getDoubleTy(*context));
 }
 
-/************************* Boolean Expression Tree **************************/
-BoolExprAST::BoolExprAST(std::string Op, ExprAST* LHS, ExprAST* RHS)
-  : Op(Op), LHS(LHS), RHS(RHS) {};
+/*********************** Boolean Expression Tree ***********************/
+BooleanExprAST::BooleanExprAST(char Op, ExprAST* LHS, ExprAST* RHS): 
+  Op(Op), LHS(LHS), RHS(RHS) {};
 
-
-/**
- * Genera codice IR LLVM per un'espressione booleana.
- * 
- * Questa funzione è responsabile della generazione del codice IR LLVM per valutare un'espressione booleana.
- * Genera ricorsivamente il codice per l'espressione della condizione e memorizza il risultato in un registro booleano.
- * Quindi, crea blocchi base per l'espressione vera, l'espressione falsa e il punto di unione.
- * Genera un'istruzione di salto condizionale basata sul valore della condizione, che determina
- * se eseguire l'espressione vera o l'espressione falsa.
- * Infine, genera il codice per l'espressione vera e l'espressione falsa, e unisce il flusso di controllo
- * al punto di unione.
- * 
- * @param drv L'oggetto driver che gestisce il processo di generazione del codice.
- * @return Il valore IR LLVM che rappresenta il risultato dell'espressione booleana.
- */
-Value *BoolExprAST::codegen(driver& drv) {
+Value* BooleanExprAST::codegen(driver& drv) {
   Value *L = LHS->codegen(drv);
   Value *R = RHS ? RHS->codegen(drv) : nullptr;
+  if (!L) return nullptr;
 
-  // Se non ho il sinistro ritorno errore
-  if (!L) 
-     return LogErrorV("Errore, l'operatore sinistro nell'espressione booleana è necessario");;
-    
-  if (R){
-    // Se ho entrambi i valori, allora posso fare il confronto
-    if (Op == "and") return builder->CreateAnd(L, R, "andres");
-    else if (Op == "or") return builder->CreateOr(L, R, "orres");
-    else {
+  // Assicurati che L e R siano booleani
+  if (L->getType()->isIntegerTy(32))
+    L = builder->CreateICmpNE(L, ConstantInt::get(*context, APInt(32, 0, true)), "tmpcmp");
+  if (R && R->getType()->isIntegerTy(32))
+    R = builder->CreateICmpNE(R, ConstantInt::get(*context, APInt(32, 0, true)), "tmpcmp");
+
+  switch (Op) {
+    case 'A':
+      return builder->CreateAnd(L, R, "andres");
+    case 'O':
+      return builder->CreateOr(L, R, "orres");
+    case 'N':
+      return builder->CreateNot(L, "notres");
+    default:
       std::cout << Op << std::endl;
-      return LogErrorV("Operatore binario non supportato");
-    }
-  } else {
-    // Se ho solo il sinistro, allora faccio il not
-    if (Op == "not") return builder->CreateNot(L, "notres");
-    else {
-      std::cout << Op << std::endl;
-      return LogErrorV("Operatore binario non supportato");
-    }
+      return LogErrorV("Unsupported boolean operator");
   }
-  
-  // Se non sono nei casi sopra ritornati, allora c'è un errore
-  return LogErrorV("Errore nell'espressione booleana"); 
-};
+}

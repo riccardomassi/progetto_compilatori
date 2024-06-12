@@ -138,6 +138,9 @@ idseq:
 %left "+" "-";
 %left "*" "/";
 
+%left "not";
+%left "and" "or";
+
 stmts:
   stmt            { $$ = std::vector<ExprAST*>{ $1 }; }          
 | stmt ";" stmts  { $3.insert($3.begin(),$1); 
@@ -151,7 +154,7 @@ stmt:
 | exp         { $$ = $1; };
 
 ifstmt:
-  "if" "(" condexp ")" stmt             { $$ = new IfExprAST($3,$5,nullptr); }   
+  "if" "(" condexp ")" stmt             { $$ = new IfExprAST($3,$5,nullptr); }  
 | "if" "(" condexp ")" stmt "else" stmt { $$ = new IfExprAST($3,$5,$7); }
 
 forstmt:
@@ -184,14 +187,14 @@ binding:
 | "var" "id" "[" "number" "]" "=" "{" explist "}" { $$ = new VarBindingAST($2,nullptr,$4,$8); } 
 
 exp:
-  "-" exp               { $$ = new BinaryExprAST('-',new NumberExprAST(0.0),$2); }
-| exp "+" exp           { $$ = new BinaryExprAST('+',$1,$3); }
+  exp "+" exp           { $$ = new BinaryExprAST('+',$1,$3); }
 | exp "-" exp           { $$ = new BinaryExprAST('-',$1,$3); }
 | exp "*" exp           { $$ = new BinaryExprAST('*',$1,$3); }
 | exp "/" exp           { $$ = new BinaryExprAST('/',$1,$3); }
 | idexp                 { $$ = $1; }
 | "(" exp ")"           { $$ = $2; }
 | "number"              { $$ = new NumberExprAST($1); }
+| "-" "number"          { $$ = new BinaryExprAST('-',new NumberExprAST(0.0),new NumberExprAST($2)); }
 | expif                 { $$ = $1; };
 
 initexp:
@@ -203,9 +206,9 @@ expif:
 
 condexp :
   relexp                { $$ = $1; }
-| relexp "and" condexp  { $$ = new BoolExprAST("and",$1,$3); }
-| relexp "or" condexp   { $$ = new BoolExprAST("or",$1,$3); }
-| "not" condexp         { $$ = new BoolExprAST("not",$2); }
+| relexp "and" condexp { $$ = new BooleanExprAST('A',$1,$3); }
+| relexp "or" condexp  { $$ = new BooleanExprAST('O',$1,$3); }
+| "not" condexp        { $$ = new BooleanExprAST('N',$2); }
 | "(" condexp ")"       { $$ = $2; }
 
 relexp :
@@ -214,6 +217,7 @@ relexp :
 
 idexp:
   "id"                  { $$ = new VariableExprAST($1); }
+| "-" "id"              { $$ = new BinaryExprAST('*',new VariableExprAST($2),new NumberExprAST(-1.0)); }
 | "id" "(" optexp ")"   { $$ = new CallExprAST($1,$3); };
 | "id" "[" exp "]"      { $$ = new VariableExprAST($1,$3, true); }
 

@@ -1,0 +1,2912 @@
+Starting parse
+Entering state 0
+Stack now 0
+Reading a token
+--(end of buffer or a NUL)
+--accepting rule at line 56 ("extern")
+Next token is token extern (../test_progetto/inssort.k:1.1-6: )
+Shifting token extern (../test_progetto/inssort.k:1.1-6: )
+Entering state 1
+Stack now 0 1
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("randinit")
+Next token is token id (../test_progetto/inssort.k:1.8-15: )
+Shifting token id (../test_progetto/inssort.k:1.8-15: )
+Entering state 10
+Stack now 0 1 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:1.16: )
+Shifting token ( (../test_progetto/inssort.k:1.16: )
+Entering state 16
+Stack now 0 1 10 16
+Reading a token
+--accepting rule at line 74 ("seed")
+Next token is token id (../test_progetto/inssort.k:1.17-20: )
+Shifting token id (../test_progetto/inssort.k:1.17-20: )
+Entering state 21
+Stack now 0 1 10 16 21
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:1.21: )
+Reducing stack by rule 13 (line 132):
+-> $$ = nterm idseq (../test_progetto/inssort.k:1.21: )
+Entering state 46
+Stack now 0 1 10 16 21 46
+Reducing stack by rule 14 (line 134):
+   $1 = token id (../test_progetto/inssort.k:1.17-20: )
+   $2 = nterm idseq (../test_progetto/inssort.k:1.21: )
+-> $$ = nterm idseq (../test_progetto/inssort.k:1.17-20: )
+Entering state 22
+Stack now 0 1 10 16 22
+Next token is token ) (../test_progetto/inssort.k:1.21: )
+Shifting token ) (../test_progetto/inssort.k:1.21: )
+Entering state 47
+Stack now 0 1 10 16 22 47
+Reducing stack by rule 10 (line 125):
+   $1 = token id (../test_progetto/inssort.k:1.8-15: )
+   $2 = token ( (../test_progetto/inssort.k:1.16: )
+   $3 = nterm idseq (../test_progetto/inssort.k:1.17-20: )
+   $4 = token ) (../test_progetto/inssort.k:1.21: )
+-> $$ = nterm proto (../test_progetto/inssort.k:1.8-21: )
+Entering state 11
+Stack now 0 1 11
+Reducing stack by rule 9 (line 122):
+   $1 = token extern (../test_progetto/inssort.k:1.1-6: )
+   $2 = nterm proto (../test_progetto/inssort.k:1.8-21: )
+-> $$ = nterm external (../test_progetto/inssort.k:1.1-21: )
+Entering state 8
+Stack now 0 8
+Reducing stack by rule 6 (line 115):
+   $1 = nterm external (../test_progetto/inssort.k:1.1-21: )
+-> $$ = nterm top (../test_progetto/inssort.k:1.1-21: )
+Entering state 6
+Stack now 0 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:1.22: )
+Shifting token ; (../test_progetto/inssort.k:1.22: )
+Entering state 15
+Stack now 0 6 15
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 56 ("extern")
+Next token is token extern (../test_progetto/inssort.k:2.1-6: )
+Shifting token extern (../test_progetto/inssort.k:2.1-6: )
+Entering state 1
+Stack now 0 6 15 1
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("randk")
+Next token is token id (../test_progetto/inssort.k:2.8-12: )
+Shifting token id (../test_progetto/inssort.k:2.8-12: )
+Entering state 10
+Stack now 0 6 15 1 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:2.13: )
+Shifting token ( (../test_progetto/inssort.k:2.13: )
+Entering state 16
+Stack now 0 6 15 1 10 16
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:2.14: )
+Reducing stack by rule 13 (line 132):
+-> $$ = nterm idseq (../test_progetto/inssort.k:2.14: )
+Entering state 22
+Stack now 0 6 15 1 10 16 22
+Next token is token ) (../test_progetto/inssort.k:2.14: )
+Shifting token ) (../test_progetto/inssort.k:2.14: )
+Entering state 47
+Stack now 0 6 15 1 10 16 22 47
+Reducing stack by rule 10 (line 125):
+   $1 = token id (../test_progetto/inssort.k:2.8-12: )
+   $2 = token ( (../test_progetto/inssort.k:2.13: )
+   $3 = nterm idseq (../test_progetto/inssort.k:2.14: )
+   $4 = token ) (../test_progetto/inssort.k:2.14: )
+-> $$ = nterm proto (../test_progetto/inssort.k:2.8-14: )
+Entering state 11
+Stack now 0 6 15 1 11
+Reducing stack by rule 9 (line 122):
+   $1 = token extern (../test_progetto/inssort.k:2.1-6: )
+   $2 = nterm proto (../test_progetto/inssort.k:2.8-14: )
+-> $$ = nterm external (../test_progetto/inssort.k:2.1-14: )
+Entering state 8
+Stack now 0 6 15 8
+Reducing stack by rule 6 (line 115):
+   $1 = nterm external (../test_progetto/inssort.k:2.1-14: )
+-> $$ = nterm top (../test_progetto/inssort.k:2.1-14: )
+Entering state 6
+Stack now 0 6 15 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:2.15: )
+Shifting token ; (../test_progetto/inssort.k:2.15: )
+Entering state 15
+Stack now 0 6 15 6 15
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 56 ("extern")
+Next token is token extern (../test_progetto/inssort.k:3.1-6: )
+Shifting token extern (../test_progetto/inssort.k:3.1-6: )
+Entering state 1
+Stack now 0 6 15 6 15 1
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("timek")
+Next token is token id (../test_progetto/inssort.k:3.8-12: )
+Shifting token id (../test_progetto/inssort.k:3.8-12: )
+Entering state 10
+Stack now 0 6 15 6 15 1 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:3.13: )
+Shifting token ( (../test_progetto/inssort.k:3.13: )
+Entering state 16
+Stack now 0 6 15 6 15 1 10 16
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:3.14: )
+Reducing stack by rule 13 (line 132):
+-> $$ = nterm idseq (../test_progetto/inssort.k:3.14: )
+Entering state 22
+Stack now 0 6 15 6 15 1 10 16 22
+Next token is token ) (../test_progetto/inssort.k:3.14: )
+Shifting token ) (../test_progetto/inssort.k:3.14: )
+Entering state 47
+Stack now 0 6 15 6 15 1 10 16 22 47
+Reducing stack by rule 10 (line 125):
+   $1 = token id (../test_progetto/inssort.k:3.8-12: )
+   $2 = token ( (../test_progetto/inssort.k:3.13: )
+   $3 = nterm idseq (../test_progetto/inssort.k:3.14: )
+   $4 = token ) (../test_progetto/inssort.k:3.14: )
+-> $$ = nterm proto (../test_progetto/inssort.k:3.8-14: )
+Entering state 11
+Stack now 0 6 15 6 15 1 11
+Reducing stack by rule 9 (line 122):
+   $1 = token extern (../test_progetto/inssort.k:3.1-6: )
+   $2 = nterm proto (../test_progetto/inssort.k:3.8-14: )
+-> $$ = nterm external (../test_progetto/inssort.k:3.1-14: )
+Entering state 8
+Stack now 0 6 15 6 15 8
+Reducing stack by rule 6 (line 115):
+   $1 = nterm external (../test_progetto/inssort.k:3.1-14: )
+-> $$ = nterm top (../test_progetto/inssort.k:3.1-14: )
+Entering state 6
+Stack now 0 6 15 6 15 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:3.15: )
+Shifting token ; (../test_progetto/inssort.k:3.15: )
+Entering state 15
+Stack now 0 6 15 6 15 6 15
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 56 ("extern")
+Next token is token extern (../test_progetto/inssort.k:4.1-6: )
+Shifting token extern (../test_progetto/inssort.k:4.1-6: )
+Entering state 1
+Stack now 0 6 15 6 15 6 15 1
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("printval")
+Next token is token id (../test_progetto/inssort.k:4.8-15: )
+Shifting token id (../test_progetto/inssort.k:4.8-15: )
+Entering state 10
+Stack now 0 6 15 6 15 6 15 1 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:4.16: )
+Shifting token ( (../test_progetto/inssort.k:4.16: )
+Entering state 16
+Stack now 0 6 15 6 15 6 15 1 10 16
+Reading a token
+--accepting rule at line 74 ("x")
+Next token is token id (../test_progetto/inssort.k:4.17: )
+Shifting token id (../test_progetto/inssort.k:4.17: )
+Entering state 21
+Stack now 0 6 15 6 15 6 15 1 10 16 21
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("controlchar")
+Next token is token id (../test_progetto/inssort.k:4.19-29: )
+Shifting token id (../test_progetto/inssort.k:4.19-29: )
+Entering state 21
+Stack now 0 6 15 6 15 6 15 1 10 16 21 21
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:4.30: )
+Reducing stack by rule 13 (line 132):
+-> $$ = nterm idseq (../test_progetto/inssort.k:4.30: )
+Entering state 46
+Stack now 0 6 15 6 15 6 15 1 10 16 21 21 46
+Reducing stack by rule 14 (line 134):
+   $1 = token id (../test_progetto/inssort.k:4.19-29: )
+   $2 = nterm idseq (../test_progetto/inssort.k:4.30: )
+-> $$ = nterm idseq (../test_progetto/inssort.k:4.19-29: )
+Entering state 46
+Stack now 0 6 15 6 15 6 15 1 10 16 21 46
+Reducing stack by rule 14 (line 134):
+   $1 = token id (../test_progetto/inssort.k:4.17: )
+   $2 = nterm idseq (../test_progetto/inssort.k:4.19-29: )
+-> $$ = nterm idseq (../test_progetto/inssort.k:4.17-29: )
+Entering state 22
+Stack now 0 6 15 6 15 6 15 1 10 16 22
+Next token is token ) (../test_progetto/inssort.k:4.30: )
+Shifting token ) (../test_progetto/inssort.k:4.30: )
+Entering state 47
+Stack now 0 6 15 6 15 6 15 1 10 16 22 47
+Reducing stack by rule 10 (line 125):
+   $1 = token id (../test_progetto/inssort.k:4.8-15: )
+   $2 = token ( (../test_progetto/inssort.k:4.16: )
+   $3 = nterm idseq (../test_progetto/inssort.k:4.17-29: )
+   $4 = token ) (../test_progetto/inssort.k:4.30: )
+-> $$ = nterm proto (../test_progetto/inssort.k:4.8-30: )
+Entering state 11
+Stack now 0 6 15 6 15 6 15 1 11
+Reducing stack by rule 9 (line 122):
+   $1 = token extern (../test_progetto/inssort.k:4.1-6: )
+   $2 = nterm proto (../test_progetto/inssort.k:4.8-30: )
+-> $$ = nterm external (../test_progetto/inssort.k:4.1-30: )
+Entering state 8
+Stack now 0 6 15 6 15 6 15 8
+Reducing stack by rule 6 (line 115):
+   $1 = nterm external (../test_progetto/inssort.k:4.1-30: )
+-> $$ = nterm top (../test_progetto/inssort.k:4.1-30: )
+Entering state 6
+Stack now 0 6 15 6 15 6 15 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:4.31: )
+Shifting token ; (../test_progetto/inssort.k:4.31: )
+Entering state 15
+Stack now 0 6 15 6 15 6 15 6 15
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 58 ("global")
+Next token is token global (../test_progetto/inssort.k:5.1-6: )
+Shifting token global (../test_progetto/inssort.k:5.1-6: )
+Entering state 3
+Stack now 0 6 15 6 15 6 15 6 15 3
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:5.8: )
+Shifting token id (../test_progetto/inssort.k:5.8: )
+Entering state 13
+Stack now 0 6 15 6 15 6 15 6 15 3 13
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:5.9: )
+Shifting token [ (../test_progetto/inssort.k:5.9: )
+Entering state 19
+Stack now 0 6 15 6 15 6 15 6 15 3 13 19
+Reading a token
+--accepting rule at line 66 ("10")
+Next token is token number (../test_progetto/inssort.k:5.10-11: )
+Shifting token number (../test_progetto/inssort.k:5.10-11: )
+Entering state 45
+Stack now 0 6 15 6 15 6 15 6 15 3 13 19 45
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:5.12: )
+Shifting token ] (../test_progetto/inssort.k:5.12: )
+Entering state 76
+Stack now 0 6 15 6 15 6 15 6 15 3 13 19 45 76
+Reducing stack by rule 12 (line 129):
+   $1 = token global (../test_progetto/inssort.k:5.1-6: )
+   $2 = token id (../test_progetto/inssort.k:5.8: )
+   $3 = token [ (../test_progetto/inssort.k:5.9: )
+   $4 = token number (../test_progetto/inssort.k:5.10-11: )
+   $5 = token ] (../test_progetto/inssort.k:5.12: )
+-> $$ = nterm globalvar (../test_progetto/inssort.k:5.1-12: )
+Entering state 9
+Stack now 0 6 15 6 15 6 15 6 15 9
+Reducing stack by rule 7 (line 116):
+   $1 = nterm globalvar (../test_progetto/inssort.k:5.1-12: )
+-> $$ = nterm top (../test_progetto/inssort.k:5.1-12: )
+Entering state 6
+Stack now 0 6 15 6 15 6 15 6 15 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:5.13: )
+Shifting token ; (../test_progetto/inssort.k:5.13: )
+Entering state 15
+Stack now 0 6 15 6 15 6 15 6 15 6 15
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 55 ("def")
+Next token is token def (../test_progetto/inssort.k:6.1-3: )
+Shifting token def (../test_progetto/inssort.k:6.1-3: )
+Entering state 2
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("inssort")
+Next token is token id (../test_progetto/inssort.k:6.5-11: )
+Shifting token id (../test_progetto/inssort.k:6.5-11: )
+Entering state 10
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:6.12: )
+Shifting token ( (../test_progetto/inssort.k:6.12: )
+Entering state 16
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 10 16
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:6.13: )
+Reducing stack by rule 13 (line 132):
+-> $$ = nterm idseq (../test_progetto/inssort.k:6.13: )
+Entering state 22
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 10 16 22
+Next token is token ) (../test_progetto/inssort.k:6.13: )
+Shifting token ) (../test_progetto/inssort.k:6.13: )
+Entering state 47
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 10 16 22 47
+Reducing stack by rule 10 (line 125):
+   $1 = token id (../test_progetto/inssort.k:6.5-11: )
+   $2 = token ( (../test_progetto/inssort.k:6.12: )
+   $3 = nterm idseq (../test_progetto/inssort.k:6.13: )
+   $4 = token ) (../test_progetto/inssort.k:6.13: )
+-> $$ = nterm proto (../test_progetto/inssort.k:6.5-13: )
+Entering state 12
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 50 ("{")
+Next token is token { (../test_progetto/inssort.k:6.15: )
+Shifting token { (../test_progetto/inssort.k:6.15: )
+Entering state 17
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("   ")
+--accepting rule at line 61 ("for")
+Next token is token for (../test_progetto/inssort.k:7.4-6: )
+Shifting token for (../test_progetto/inssort.k:7.4-6: )
+Entering state 28
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:7.8: )
+Shifting token ( (../test_progetto/inssort.k:7.8: )
+Entering state 58
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58
+Reading a token
+--accepting rule at line 57 ("var")
+Next token is token var (../test_progetto/inssort.k:7.9-11: )
+Shifting token var (../test_progetto/inssort.k:7.9-11: )
+Entering state 26
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 26
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:7.13: )
+Shifting token id (../test_progetto/inssort.k:7.13: )
+Entering state 56
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 26 56
+Reading a token
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:7.14: )
+Shifting token = (../test_progetto/inssort.k:7.14: )
+Entering state 82
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 26 56 82
+Reading a token
+--accepting rule at line 66 ("1")
+Next token is token number (../test_progetto/inssort.k:7.15: )
+Shifting token number (../test_progetto/inssort.k:7.15: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 26 56 82 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:7.15: )
+-> $$ = nterm exp (../test_progetto/inssort.k:7.15: )
+Entering state 109
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 26 56 82 109
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:7.16: )
+Reducing stack by rule 48 (line 201):
+   $1 = token = (../test_progetto/inssort.k:7.14: )
+   $2 = nterm exp (../test_progetto/inssort.k:7.15: )
+-> $$ = nterm initexp (../test_progetto/inssort.k:7.14-15: )
+Entering state 84
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 26 56 84
+Reducing stack by rule 35 (line 184):
+   $1 = token var (../test_progetto/inssort.k:7.9-11: )
+   $2 = token id (../test_progetto/inssort.k:7.13: )
+   $3 = nterm initexp (../test_progetto/inssort.k:7.14-15: )
+-> $$ = nterm binding (../test_progetto/inssort.k:7.9-15: )
+Entering state 90
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 90
+Reducing stack by rule 25 (line 163):
+   $1 = nterm binding (../test_progetto/inssort.k:7.9-15: )
+-> $$ = nterm init (../test_progetto/inssort.k:7.9-15: )
+Entering state 88
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88
+Next token is token ; (../test_progetto/inssort.k:7.16: )
+Shifting token ; (../test_progetto/inssort.k:7.16: )
+Entering state 113
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:7.18: )
+Shifting token id (../test_progetto/inssort.k:7.18: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 53
+Reading a token
+--accepting rule at line 47 ("<")
+Next token is token < (../test_progetto/inssort.k:7.19: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:7.18: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:7.18: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:7.18: )
+-> $$ = nterm exp (../test_progetto/inssort.k:7.18: )
+Entering state 59
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 59
+Next token is token < (../test_progetto/inssort.k:7.19: )
+Shifting token < (../test_progetto/inssort.k:7.19: )
+Entering state 71
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 59 71
+Reading a token
+--accepting rule at line 66 ("10")
+Next token is token number (../test_progetto/inssort.k:7.20-21: )
+Shifting token number (../test_progetto/inssort.k:7.20-21: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 59 71 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:7.20-21: )
+-> $$ = nterm exp (../test_progetto/inssort.k:7.20-21: )
+Entering state 103
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 59 71 103
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:7.22: )
+Reducing stack by rule 55 (line 214):
+   $1 = nterm exp (../test_progetto/inssort.k:7.18: )
+   $2 = token < (../test_progetto/inssort.k:7.19: )
+   $3 = nterm exp (../test_progetto/inssort.k:7.20-21: )
+-> $$ = nterm relexp (../test_progetto/inssort.k:7.18-21: )
+Entering state 43
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 43
+Next token is token ; (../test_progetto/inssort.k:7.22: )
+Reducing stack by rule 50 (line 207):
+   $1 = nterm relexp (../test_progetto/inssort.k:7.18-21: )
+-> $$ = nterm condexp (../test_progetto/inssort.k:7.18-21: )
+Entering state 123
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123
+Next token is token ; (../test_progetto/inssort.k:7.22: )
+Shifting token ; (../test_progetto/inssort.k:7.22: )
+Entering state 130
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 38 ("+")
+Next token is token + (../test_progetto/inssort.k:7.24: )
+Shifting token + (../test_progetto/inssort.k:7.24: )
+Entering state 24
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 24
+Reading a token
+--accepting rule at line 38 ("+")
+Next token is token + (../test_progetto/inssort.k:7.25: )
+Shifting token + (../test_progetto/inssort.k:7.25: )
+Entering state 51
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 24 51
+Reading a token
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:7.26: )
+Shifting token id (../test_progetto/inssort.k:7.26: )
+Entering state 78
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 24 51 78
+Reducing stack by rule 29 (line 169):
+   $1 = token + (../test_progetto/inssort.k:7.24: )
+   $2 = token + (../test_progetto/inssort.k:7.25: )
+   $3 = token id (../test_progetto/inssort.k:7.26: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:7.24-26: )
+Entering state 134
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:7.27: )
+Shifting token ) (../test_progetto/inssort.k:7.27: )
+Entering state 136
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 50 ("{")
+Next token is token { (../test_progetto/inssort.k:7.29: )
+Shifting token { (../test_progetto/inssort.k:7.29: )
+Entering state 17
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("       ")
+--accepting rule at line 57 ("var")
+Next token is token var (../test_progetto/inssort.k:8.8-10: )
+Shifting token var (../test_progetto/inssort.k:8.8-10: )
+Entering state 26
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("pivot")
+Next token is token id (../test_progetto/inssort.k:8.12-16: )
+Shifting token id (../test_progetto/inssort.k:8.12-16: )
+Entering state 56
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:8.18: )
+Shifting token = (../test_progetto/inssort.k:8.18: )
+Entering state 82
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:8.20: )
+Shifting token id (../test_progetto/inssort.k:8.20: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82 53
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:8.21: )
+Shifting token [ (../test_progetto/inssort.k:8.21: )
+Entering state 79
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82 53 79
+Reading a token
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:8.22: )
+Shifting token id (../test_progetto/inssort.k:8.22: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82 53 79 53
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:8.23: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:8.22: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:8.22: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82 53 79 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:8.22: )
+-> $$ = nterm exp (../test_progetto/inssort.k:8.22: )
+Entering state 108
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82 53 79 108
+Next token is token ] (../test_progetto/inssort.k:8.23: )
+Shifting token ] (../test_progetto/inssort.k:8.23: )
+Entering state 119
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82 53 79 108 119
+Reducing stack by rule 60 (line 221):
+   $1 = token id (../test_progetto/inssort.k:8.20: )
+   $2 = token [ (../test_progetto/inssort.k:8.21: )
+   $3 = nterm exp (../test_progetto/inssort.k:8.22: )
+   $4 = token ] (../test_progetto/inssort.k:8.23: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:8.20-23: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:8.20-23: )
+-> $$ = nterm exp (../test_progetto/inssort.k:8.20-23: )
+Entering state 109
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 82 109
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:8.24: )
+Reducing stack by rule 48 (line 201):
+   $1 = token = (../test_progetto/inssort.k:8.18: )
+   $2 = nterm exp (../test_progetto/inssort.k:8.20-23: )
+-> $$ = nterm initexp (../test_progetto/inssort.k:8.18-23: )
+Entering state 84
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 26 56 84
+Reducing stack by rule 35 (line 184):
+   $1 = token var (../test_progetto/inssort.k:8.8-10: )
+   $2 = token id (../test_progetto/inssort.k:8.12-16: )
+   $3 = nterm initexp (../test_progetto/inssort.k:8.18-23: )
+-> $$ = nterm binding (../test_progetto/inssort.k:8.8-23: )
+Entering state 39
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 39
+Reducing stack by rule 33 (line 177):
+   $1 = nterm binding (../test_progetto/inssort.k:8.8-23: )
+-> $$ = nterm vardefs (../test_progetto/inssort.k:8.8-23: )
+Entering state 38
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38
+Next token is token ; (../test_progetto/inssort.k:8.24: )
+Shifting token ; (../test_progetto/inssort.k:8.24: )
+Entering state 66
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("       ")
+--accepting rule at line 57 ("var")
+Next token is token var (../test_progetto/inssort.k:9.8-10: )
+Shifting token var (../test_progetto/inssort.k:9.8-10: )
+Entering state 26
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 26
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("step")
+Next token is token id (../test_progetto/inssort.k:9.12-15: )
+Shifting token id (../test_progetto/inssort.k:9.12-15: )
+Entering state 56
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 26 56
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:9.17: )
+Shifting token = (../test_progetto/inssort.k:9.17: )
+Entering state 82
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 26 56 82
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 66 ("1")
+Next token is token number (../test_progetto/inssort.k:9.19: )
+Shifting token number (../test_progetto/inssort.k:9.19: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 26 56 82 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:9.19: )
+-> $$ = nterm exp (../test_progetto/inssort.k:9.19: )
+Entering state 109
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 26 56 82 109
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:9.20: )
+Reducing stack by rule 48 (line 201):
+   $1 = token = (../test_progetto/inssort.k:9.17: )
+   $2 = nterm exp (../test_progetto/inssort.k:9.19: )
+-> $$ = nterm initexp (../test_progetto/inssort.k:9.17-19: )
+Entering state 84
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 26 56 84
+Reducing stack by rule 35 (line 184):
+   $1 = token var (../test_progetto/inssort.k:9.8-10: )
+   $2 = token id (../test_progetto/inssort.k:9.12-15: )
+   $3 = nterm initexp (../test_progetto/inssort.k:9.17-19: )
+-> $$ = nterm binding (../test_progetto/inssort.k:9.8-19: )
+Entering state 98
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 98
+Reducing stack by rule 34 (line 180):
+   $1 = nterm vardefs (../test_progetto/inssort.k:8.8-23: )
+   $2 = token ; (../test_progetto/inssort.k:8.24: )
+   $3 = nterm binding (../test_progetto/inssort.k:9.8-19: )
+-> $$ = nterm vardefs (../test_progetto/inssort.k:8.8-9.19: )
+Entering state 38
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38
+Next token is token ; (../test_progetto/inssort.k:9.20: )
+Shifting token ; (../test_progetto/inssort.k:9.20: )
+Entering state 66
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("       ")
+--accepting rule at line 61 ("for")
+Next token is token for (../test_progetto/inssort.k:10.8-10: )
+Shifting token for (../test_progetto/inssort.k:10.8-10: )
+Entering state 28
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:10.12: )
+Shifting token ( (../test_progetto/inssort.k:10.12: )
+Entering state 58
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58
+Reading a token
+--accepting rule at line 57 ("var")
+Next token is token var (../test_progetto/inssort.k:10.13-15: )
+Shifting token var (../test_progetto/inssort.k:10.13-15: )
+Entering state 26
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("j")
+Next token is token id (../test_progetto/inssort.k:10.17: )
+Shifting token id (../test_progetto/inssort.k:10.17: )
+Entering state 56
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:10.19: )
+Shifting token = (../test_progetto/inssort.k:10.19: )
+Entering state 82
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 82
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:10.21: )
+Shifting token id (../test_progetto/inssort.k:10.21: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 82 53
+Reading a token
+--accepting rule at line 37 ("-")
+Next token is token - (../test_progetto/inssort.k:10.22: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:10.21: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:10.21: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 82 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:10.21: )
+-> $$ = nterm exp (../test_progetto/inssort.k:10.21: )
+Entering state 109
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 82 109
+Next token is token - (../test_progetto/inssort.k:10.22: )
+Shifting token - (../test_progetto/inssort.k:10.22: )
+Entering state 67
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 82 109 67
+Reading a token
+--accepting rule at line 66 ("1")
+Next token is token number (../test_progetto/inssort.k:10.23: )
+Shifting token number (../test_progetto/inssort.k:10.23: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 82 109 67 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:10.23: )
+-> $$ = nterm exp (../test_progetto/inssort.k:10.23: )
+Entering state 99
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 82 109 67 99
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:10.24: )
+Reducing stack by rule 39 (line 190):
+   $1 = nterm exp (../test_progetto/inssort.k:10.21: )
+   $2 = token - (../test_progetto/inssort.k:10.22: )
+   $3 = nterm exp (../test_progetto/inssort.k:10.23: )
+-> $$ = nterm exp (../test_progetto/inssort.k:10.21-23: )
+Entering state 109
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 82 109
+Next token is token ; (../test_progetto/inssort.k:10.24: )
+Reducing stack by rule 48 (line 201):
+   $1 = token = (../test_progetto/inssort.k:10.19: )
+   $2 = nterm exp (../test_progetto/inssort.k:10.21-23: )
+-> $$ = nterm initexp (../test_progetto/inssort.k:10.19-23: )
+Entering state 84
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 26 56 84
+Reducing stack by rule 35 (line 184):
+   $1 = token var (../test_progetto/inssort.k:10.13-15: )
+   $2 = token id (../test_progetto/inssort.k:10.17: )
+   $3 = nterm initexp (../test_progetto/inssort.k:10.19-23: )
+-> $$ = nterm binding (../test_progetto/inssort.k:10.13-23: )
+Entering state 90
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 90
+Reducing stack by rule 25 (line 163):
+   $1 = nterm binding (../test_progetto/inssort.k:10.13-23: )
+-> $$ = nterm init (../test_progetto/inssort.k:10.13-23: )
+Entering state 88
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88
+Next token is token ; (../test_progetto/inssort.k:10.24: )
+Shifting token ; (../test_progetto/inssort.k:10.24: )
+Entering state 113
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 37 ("-")
+Next token is token - (../test_progetto/inssort.k:10.26: )
+Shifting token - (../test_progetto/inssort.k:10.26: )
+Entering state 52
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 52
+Reading a token
+--accepting rule at line 66 ("1")
+Next token is token number (../test_progetto/inssort.k:10.27: )
+Shifting token number (../test_progetto/inssort.k:10.27: )
+Entering state 50
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 52 50
+Reducing stack by rule 45 (line 196):
+   $1 = token - (../test_progetto/inssort.k:10.26: )
+   $2 = token number (../test_progetto/inssort.k:10.27: )
+-> $$ = nterm exp (../test_progetto/inssort.k:10.26-27: )
+Entering state 59
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 59
+Reading a token
+--accepting rule at line 47 ("<")
+Next token is token < (../test_progetto/inssort.k:10.28: )
+Shifting token < (../test_progetto/inssort.k:10.28: )
+Entering state 71
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 59 71
+Reading a token
+--accepting rule at line 74 ("j")
+Next token is token id (../test_progetto/inssort.k:10.29: )
+Shifting token id (../test_progetto/inssort.k:10.29: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 59 71 53
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:10.30: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:10.29: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:10.29: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 59 71 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:10.29: )
+-> $$ = nterm exp (../test_progetto/inssort.k:10.29: )
+Entering state 103
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 59 71 103
+Next token is token ; (../test_progetto/inssort.k:10.30: )
+Reducing stack by rule 55 (line 214):
+   $1 = nterm exp (../test_progetto/inssort.k:10.26-27: )
+   $2 = token < (../test_progetto/inssort.k:10.28: )
+   $3 = nterm exp (../test_progetto/inssort.k:10.29: )
+-> $$ = nterm relexp (../test_progetto/inssort.k:10.26-29: )
+Entering state 43
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 43
+Next token is token ; (../test_progetto/inssort.k:10.30: )
+Reducing stack by rule 50 (line 207):
+   $1 = nterm relexp (../test_progetto/inssort.k:10.26-29: )
+-> $$ = nterm condexp (../test_progetto/inssort.k:10.26-29: )
+Entering state 123
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123
+Next token is token ; (../test_progetto/inssort.k:10.30: )
+Shifting token ; (../test_progetto/inssort.k:10.30: )
+Entering state 130
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("j")
+Next token is token id (../test_progetto/inssort.k:10.32: )
+Shifting token id (../test_progetto/inssort.k:10.32: )
+Entering state 87
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87
+Reading a token
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:10.33: )
+Shifting token = (../test_progetto/inssort.k:10.33: )
+Entering state 62
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62
+Reading a token
+--accepting rule at line 74 ("j")
+Next token is token id (../test_progetto/inssort.k:10.34: )
+Shifting token id (../test_progetto/inssort.k:10.34: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62 53
+Reading a token
+--accepting rule at line 37 ("-")
+Next token is token - (../test_progetto/inssort.k:10.35: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:10.34: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:10.34: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:10.34: )
+-> $$ = nterm exp (../test_progetto/inssort.k:10.34: )
+Entering state 94
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62 94
+Next token is token - (../test_progetto/inssort.k:10.35: )
+Shifting token - (../test_progetto/inssort.k:10.35: )
+Entering state 67
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62 94 67
+Reading a token
+--accepting rule at line 74 ("step")
+Next token is token id (../test_progetto/inssort.k:10.36-39: )
+Shifting token id (../test_progetto/inssort.k:10.36-39: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62 94 67 53
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:10.40: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:10.36-39: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:10.36-39: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62 94 67 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:10.36-39: )
+-> $$ = nterm exp (../test_progetto/inssort.k:10.36-39: )
+Entering state 99
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62 94 67 99
+Next token is token ) (../test_progetto/inssort.k:10.40: )
+Reducing stack by rule 39 (line 190):
+   $1 = nterm exp (../test_progetto/inssort.k:10.34: )
+   $2 = token - (../test_progetto/inssort.k:10.35: )
+   $3 = nterm exp (../test_progetto/inssort.k:10.36-39: )
+-> $$ = nterm exp (../test_progetto/inssort.k:10.34-39: )
+Entering state 94
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 87 62 94
+Next token is token ) (../test_progetto/inssort.k:10.40: )
+Reducing stack by rule 27 (line 167):
+   $1 = token id (../test_progetto/inssort.k:10.32: )
+   $2 = token = (../test_progetto/inssort.k:10.33: )
+   $3 = nterm exp (../test_progetto/inssort.k:10.34-39: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:10.32-39: )
+Entering state 134
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134
+Next token is token ) (../test_progetto/inssort.k:10.40: )
+Shifting token ) (../test_progetto/inssort.k:10.40: )
+Entering state 136
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("           ")
+--accepting rule at line 59 ("if")
+Next token is token if (../test_progetto/inssort.k:11.12-13: )
+Shifting token if (../test_progetto/inssort.k:11.12-13: )
+Entering state 27
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:11.15: )
+Shifting token ( (../test_progetto/inssort.k:11.15: )
+Entering state 57
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57
+Reading a token
+--accepting rule at line 74 ("pivot")
+Next token is token id (../test_progetto/inssort.k:11.16-20: )
+Shifting token id (../test_progetto/inssort.k:11.16-20: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 53
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 47 ("<")
+Next token is token < (../test_progetto/inssort.k:11.22: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:11.16-20: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:11.16-20: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:11.16-20: )
+-> $$ = nterm exp (../test_progetto/inssort.k:11.16-20: )
+Entering state 59
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59
+Next token is token < (../test_progetto/inssort.k:11.22: )
+Shifting token < (../test_progetto/inssort.k:11.22: )
+Entering state 71
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:11.24: )
+Shifting token id (../test_progetto/inssort.k:11.24: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71 53
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:11.25: )
+Shifting token [ (../test_progetto/inssort.k:11.25: )
+Entering state 79
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71 53 79
+Reading a token
+--accepting rule at line 74 ("j")
+Next token is token id (../test_progetto/inssort.k:11.26: )
+Shifting token id (../test_progetto/inssort.k:11.26: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71 53 79 53
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:11.27: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:11.26: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:11.26: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71 53 79 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:11.26: )
+-> $$ = nterm exp (../test_progetto/inssort.k:11.26: )
+Entering state 108
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71 53 79 108
+Next token is token ] (../test_progetto/inssort.k:11.27: )
+Shifting token ] (../test_progetto/inssort.k:11.27: )
+Entering state 119
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71 53 79 108 119
+Reducing stack by rule 60 (line 221):
+   $1 = token id (../test_progetto/inssort.k:11.24: )
+   $2 = token [ (../test_progetto/inssort.k:11.25: )
+   $3 = nterm exp (../test_progetto/inssort.k:11.26: )
+   $4 = token ] (../test_progetto/inssort.k:11.27: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:11.24-27: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:11.24-27: )
+-> $$ = nterm exp (../test_progetto/inssort.k:11.24-27: )
+Entering state 103
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 59 71 103
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:11.28: )
+Reducing stack by rule 55 (line 214):
+   $1 = nterm exp (../test_progetto/inssort.k:11.16-20: )
+   $2 = token < (../test_progetto/inssort.k:11.22: )
+   $3 = nterm exp (../test_progetto/inssort.k:11.24-27: )
+-> $$ = nterm relexp (../test_progetto/inssort.k:11.16-27: )
+Entering state 43
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 43
+Next token is token ) (../test_progetto/inssort.k:11.28: )
+Reducing stack by rule 50 (line 207):
+   $1 = nterm relexp (../test_progetto/inssort.k:11.16-27: )
+-> $$ = nterm condexp (../test_progetto/inssort.k:11.16-27: )
+Entering state 85
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85
+Next token is token ) (../test_progetto/inssort.k:11.28: )
+Shifting token ) (../test_progetto/inssort.k:11.28: )
+Entering state 111
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:11.30: )
+Shifting token id (../test_progetto/inssort.k:11.30: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:11.31: )
+Shifting token [ (../test_progetto/inssort.k:11.31: )
+Entering state 63
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63
+Reading a token
+--accepting rule at line 74 ("j")
+Next token is token id (../test_progetto/inssort.k:11.32: )
+Shifting token id (../test_progetto/inssort.k:11.32: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 53
+Reading a token
+--accepting rule at line 38 ("+")
+Next token is token + (../test_progetto/inssort.k:11.33: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:11.32: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:11.32: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:11.32: )
+-> $$ = nterm exp (../test_progetto/inssort.k:11.32: )
+Entering state 95
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95
+Next token is token + (../test_progetto/inssort.k:11.33: )
+Shifting token + (../test_progetto/inssort.k:11.33: )
+Entering state 68
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 68
+Reading a token
+--accepting rule at line 66 ("1")
+Next token is token number (../test_progetto/inssort.k:11.34: )
+Shifting token number (../test_progetto/inssort.k:11.34: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 68 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:11.34: )
+-> $$ = nterm exp (../test_progetto/inssort.k:11.34: )
+Entering state 100
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 68 100
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:11.35: )
+Reducing stack by rule 38 (line 189):
+   $1 = nterm exp (../test_progetto/inssort.k:11.32: )
+   $2 = token + (../test_progetto/inssort.k:11.33: )
+   $3 = nterm exp (../test_progetto/inssort.k:11.34: )
+-> $$ = nterm exp (../test_progetto/inssort.k:11.32-34: )
+Entering state 95
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95
+Next token is token ] (../test_progetto/inssort.k:11.35: )
+Shifting token ] (../test_progetto/inssort.k:11.35: )
+Entering state 116
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:11.37: )
+Shifting token = (../test_progetto/inssort.k:11.37: )
+Entering state 125
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:11.39: )
+Shifting token id (../test_progetto/inssort.k:11.39: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125 53
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:11.40: )
+Shifting token [ (../test_progetto/inssort.k:11.40: )
+Entering state 79
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125 53 79
+Reading a token
+--accepting rule at line 74 ("j")
+Next token is token id (../test_progetto/inssort.k:11.41: )
+Shifting token id (../test_progetto/inssort.k:11.41: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125 53 79 53
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:11.42: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:11.41: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:11.41: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125 53 79 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:11.41: )
+-> $$ = nterm exp (../test_progetto/inssort.k:11.41: )
+Entering state 108
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125 53 79 108
+Next token is token ] (../test_progetto/inssort.k:11.42: )
+Shifting token ] (../test_progetto/inssort.k:11.42: )
+Entering state 119
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125 53 79 108 119
+Reducing stack by rule 60 (line 221):
+   $1 = token id (../test_progetto/inssort.k:11.39: )
+   $2 = token [ (../test_progetto/inssort.k:11.40: )
+   $3 = nterm exp (../test_progetto/inssort.k:11.41: )
+   $4 = token ] (../test_progetto/inssort.k:11.42: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:11.39-42: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:11.39-42: )
+-> $$ = nterm exp (../test_progetto/inssort.k:11.39-42: )
+Entering state 131
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 30 63 95 116 125 131
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("           ")
+--accepting rule at line 60 ("else")
+Next token is token else (../test_progetto/inssort.k:12.12-15: )
+Reducing stack by rule 28 (line 168):
+   $1 = token id (../test_progetto/inssort.k:11.30: )
+   $2 = token [ (../test_progetto/inssort.k:11.31: )
+   $3 = nterm exp (../test_progetto/inssort.k:11.32-34: )
+   $4 = token ] (../test_progetto/inssort.k:11.35: )
+   $5 = token = (../test_progetto/inssort.k:11.37: )
+   $6 = nterm exp (../test_progetto/inssort.k:11.39-42: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:11.30-42: )
+Entering state 36
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 36
+Reducing stack by rule 17 (line 149):
+   $1 = nterm assignment (../test_progetto/inssort.k:11.30-42: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:11.30-42: )
+Entering state 121
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121
+Next token is token else (../test_progetto/inssort.k:12.12-15: )
+Shifting token else (../test_progetto/inssort.k:12.12-15: )
+Entering state 128
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 50 ("{")
+Next token is token { (../test_progetto/inssort.k:12.17: )
+Shifting token { (../test_progetto/inssort.k:12.17: )
+Entering state 17
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("             ")
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:13.14: )
+Shifting token id (../test_progetto/inssort.k:13.14: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:13.15: )
+Shifting token [ (../test_progetto/inssort.k:13.15: )
+Entering state 63
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63
+Reading a token
+--accepting rule at line 74 ("j")
+Next token is token id (../test_progetto/inssort.k:13.16: )
+Shifting token id (../test_progetto/inssort.k:13.16: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 53
+Reading a token
+--accepting rule at line 38 ("+")
+Next token is token + (../test_progetto/inssort.k:13.17: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:13.16: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:13.16: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:13.16: )
+-> $$ = nterm exp (../test_progetto/inssort.k:13.16: )
+Entering state 95
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95
+Next token is token + (../test_progetto/inssort.k:13.17: )
+Shifting token + (../test_progetto/inssort.k:13.17: )
+Entering state 68
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95 68
+Reading a token
+--accepting rule at line 66 ("1")
+Next token is token number (../test_progetto/inssort.k:13.18: )
+Shifting token number (../test_progetto/inssort.k:13.18: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95 68 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:13.18: )
+-> $$ = nterm exp (../test_progetto/inssort.k:13.18: )
+Entering state 100
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95 68 100
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:13.19: )
+Reducing stack by rule 38 (line 189):
+   $1 = nterm exp (../test_progetto/inssort.k:13.16: )
+   $2 = token + (../test_progetto/inssort.k:13.17: )
+   $3 = nterm exp (../test_progetto/inssort.k:13.18: )
+-> $$ = nterm exp (../test_progetto/inssort.k:13.16-18: )
+Entering state 95
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95
+Next token is token ] (../test_progetto/inssort.k:13.19: )
+Shifting token ] (../test_progetto/inssort.k:13.19: )
+Entering state 116
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95 116
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:13.21: )
+Shifting token = (../test_progetto/inssort.k:13.21: )
+Entering state 125
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95 116 125
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("pivot")
+Next token is token id (../test_progetto/inssort.k:13.23-27: )
+Shifting token id (../test_progetto/inssort.k:13.23-27: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95 116 125 53
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:13.28: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:13.23-27: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:13.23-27: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95 116 125 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:13.23-27: )
+-> $$ = nterm exp (../test_progetto/inssort.k:13.23-27: )
+Entering state 131
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 30 63 95 116 125 131
+Next token is token ; (../test_progetto/inssort.k:13.28: )
+Reducing stack by rule 28 (line 168):
+   $1 = token id (../test_progetto/inssort.k:13.14: )
+   $2 = token [ (../test_progetto/inssort.k:13.15: )
+   $3 = nterm exp (../test_progetto/inssort.k:13.16-18: )
+   $4 = token ] (../test_progetto/inssort.k:13.19: )
+   $5 = token = (../test_progetto/inssort.k:13.21: )
+   $6 = nterm exp (../test_progetto/inssort.k:13.23-27: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:13.14-27: )
+Entering state 36
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 36
+Reducing stack by rule 17 (line 149):
+   $1 = nterm assignment (../test_progetto/inssort.k:13.14-27: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:13.14-27: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33
+Next token is token ; (../test_progetto/inssort.k:13.28: )
+Shifting token ; (../test_progetto/inssort.k:13.28: )
+Entering state 65
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33 65
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("             ")
+--accepting rule at line 74 ("step")
+Next token is token id (../test_progetto/inssort.k:14.14-17: )
+Shifting token id (../test_progetto/inssort.k:14.14-17: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33 65 30
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:14.19: )
+Shifting token = (../test_progetto/inssort.k:14.19: )
+Entering state 62
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33 65 30 62
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 66 ("10")
+Next token is token number (../test_progetto/inssort.k:14.21-22: )
+Shifting token number (../test_progetto/inssort.k:14.21-22: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33 65 30 62 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:14.21-22: )
+-> $$ = nterm exp (../test_progetto/inssort.k:14.21-22: )
+Entering state 94
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33 65 30 62 94
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("           ")
+--accepting rule at line 51 ("}")
+Next token is token } (../test_progetto/inssort.k:15.12: )
+Reducing stack by rule 27 (line 167):
+   $1 = token id (../test_progetto/inssort.k:14.14-17: )
+   $2 = token = (../test_progetto/inssort.k:14.19: )
+   $3 = nterm exp (../test_progetto/inssort.k:14.21-22: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:14.14-22: )
+Entering state 36
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33 65 36
+Reducing stack by rule 17 (line 149):
+   $1 = nterm assignment (../test_progetto/inssort.k:14.14-22: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:14.14-22: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33 65 33
+Next token is token } (../test_progetto/inssort.k:15.12: )
+Reducing stack by rule 15 (line 144):
+   $1 = nterm stmt (../test_progetto/inssort.k:14.14-22: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:14.14-22: )
+Entering state 96
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 33 65 96
+Reducing stack by rule 16 (line 145):
+   $1 = nterm stmt (../test_progetto/inssort.k:13.14-27: )
+   $2 = token ; (../test_progetto/inssort.k:13.28: )
+   $3 = nterm stmts (../test_progetto/inssort.k:14.14-22: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:13.14-14.22: )
+Entering state 32
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 32
+Next token is token } (../test_progetto/inssort.k:15.12: )
+Shifting token } (../test_progetto/inssort.k:15.12: )
+Entering state 64
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 17 32 64
+Reducing stack by rule 31 (line 173):
+   $1 = token { (../test_progetto/inssort.k:12.17: )
+   $2 = nterm stmts (../test_progetto/inssort.k:13.14-14.22: )
+   $3 = token } (../test_progetto/inssort.k:15.12: )
+-> $$ = nterm block (../test_progetto/inssort.k:12.17-15.12: )
+Entering state 37
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 37
+Reducing stack by rule 18 (line 150):
+   $1 = nterm block (../test_progetto/inssort.k:12.17-15.12: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:12.17-15.12: )
+Entering state 133
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 27 57 85 111 121 128 133
+Reducing stack by rule 23 (line 157):
+   $1 = token if (../test_progetto/inssort.k:11.12-13: )
+   $2 = token ( (../test_progetto/inssort.k:11.15: )
+   $3 = nterm condexp (../test_progetto/inssort.k:11.16-27: )
+   $4 = token ) (../test_progetto/inssort.k:11.28: )
+   $5 = nterm stmt (../test_progetto/inssort.k:11.30-42: )
+   $6 = token else (../test_progetto/inssort.k:12.12-15: )
+   $7 = nterm stmt (../test_progetto/inssort.k:12.17-15.12: )
+-> $$ = nterm ifstmt (../test_progetto/inssort.k:11.12-15.12: )
+Entering state 34
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 34
+Reducing stack by rule 19 (line 151):
+   $1 = nterm ifstmt (../test_progetto/inssort.k:11.12-15.12: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:11.12-15.12: )
+Entering state 138
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 28 58 88 113 123 130 134 136 138
+Reducing stack by rule 24 (line 160):
+   $1 = token for (../test_progetto/inssort.k:10.8-10: )
+   $2 = token ( (../test_progetto/inssort.k:10.12: )
+   $3 = nterm init (../test_progetto/inssort.k:10.13-23: )
+   $4 = token ; (../test_progetto/inssort.k:10.24: )
+   $5 = nterm condexp (../test_progetto/inssort.k:10.26-29: )
+   $6 = token ; (../test_progetto/inssort.k:10.30: )
+   $7 = nterm assignment (../test_progetto/inssort.k:10.32-39: )
+   $8 = token ) (../test_progetto/inssort.k:10.40: )
+   $9 = nterm stmt (../test_progetto/inssort.k:11.12-15.12: )
+-> $$ = nterm forstmt (../test_progetto/inssort.k:10.8-15.12: )
+Entering state 35
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 35
+Reducing stack by rule 20 (line 152):
+   $1 = nterm forstmt (../test_progetto/inssort.k:10.8-15.12: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:10.8-15.12: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:15.13: )
+Shifting token ; (../test_progetto/inssort.k:15.13: )
+Entering state 65
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("       ")
+--accepting rule at line 59 ("if")
+Next token is token if (../test_progetto/inssort.k:16.8-9: )
+Shifting token if (../test_progetto/inssort.k:16.8-9: )
+Entering state 27
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:16.11: )
+Shifting token ( (../test_progetto/inssort.k:16.11: )
+Entering state 57
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57
+Reading a token
+--accepting rule at line 74 ("step")
+Next token is token id (../test_progetto/inssort.k:16.12-15: )
+Shifting token id (../test_progetto/inssort.k:16.12-15: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 53
+Reading a token
+--accepting rule at line 48 ("==")
+Next token is token == (../test_progetto/inssort.k:16.16-17: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:16.12-15: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:16.12-15: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:16.12-15: )
+-> $$ = nterm exp (../test_progetto/inssort.k:16.12-15: )
+Entering state 59
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 59
+Next token is token == (../test_progetto/inssort.k:16.16-17: )
+Shifting token == (../test_progetto/inssort.k:16.16-17: )
+Entering state 72
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 59 72
+Reading a token
+--accepting rule at line 66 ("1")
+Next token is token number (../test_progetto/inssort.k:16.18: )
+Shifting token number (../test_progetto/inssort.k:16.18: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 59 72 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:16.18: )
+-> $$ = nterm exp (../test_progetto/inssort.k:16.18: )
+Entering state 104
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 59 72 104
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:16.19: )
+Reducing stack by rule 56 (line 215):
+   $1 = nterm exp (../test_progetto/inssort.k:16.12-15: )
+   $2 = token == (../test_progetto/inssort.k:16.16-17: )
+   $3 = nterm exp (../test_progetto/inssort.k:16.18: )
+-> $$ = nterm relexp (../test_progetto/inssort.k:16.12-18: )
+Entering state 43
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 43
+Next token is token ) (../test_progetto/inssort.k:16.19: )
+Reducing stack by rule 50 (line 207):
+   $1 = nterm relexp (../test_progetto/inssort.k:16.12-18: )
+-> $$ = nterm condexp (../test_progetto/inssort.k:16.12-18: )
+Entering state 85
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85
+Next token is token ) (../test_progetto/inssort.k:16.19: )
+Shifting token ) (../test_progetto/inssort.k:16.19: )
+Entering state 111
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:16.21: )
+Shifting token id (../test_progetto/inssort.k:16.21: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:16.22: )
+Shifting token [ (../test_progetto/inssort.k:16.22: )
+Entering state 63
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30 63
+Reading a token
+--accepting rule at line 66 ("0")
+Next token is token number (../test_progetto/inssort.k:16.23: )
+Shifting token number (../test_progetto/inssort.k:16.23: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30 63 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:16.23: )
+-> $$ = nterm exp (../test_progetto/inssort.k:16.23: )
+Entering state 95
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30 63 95
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:16.24: )
+Shifting token ] (../test_progetto/inssort.k:16.24: )
+Entering state 116
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30 63 95 116
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:16.26: )
+Shifting token = (../test_progetto/inssort.k:16.26: )
+Entering state 125
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30 63 95 116 125
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("pivot")
+Next token is token id (../test_progetto/inssort.k:16.28-32: )
+Shifting token id (../test_progetto/inssort.k:16.28-32: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30 63 95 116 125 53
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("    ")
+--accepting rule at line 51 ("}")
+Next token is token } (../test_progetto/inssort.k:17.5: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:16.28-32: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:16.28-32: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30 63 95 116 125 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:16.28-32: )
+-> $$ = nterm exp (../test_progetto/inssort.k:16.28-32: )
+Entering state 131
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 30 63 95 116 125 131
+Next token is token } (../test_progetto/inssort.k:17.5: )
+Reducing stack by rule 28 (line 168):
+   $1 = token id (../test_progetto/inssort.k:16.21: )
+   $2 = token [ (../test_progetto/inssort.k:16.22: )
+   $3 = nterm exp (../test_progetto/inssort.k:16.23: )
+   $4 = token ] (../test_progetto/inssort.k:16.24: )
+   $5 = token = (../test_progetto/inssort.k:16.26: )
+   $6 = nterm exp (../test_progetto/inssort.k:16.28-32: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:16.21-32: )
+Entering state 36
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 36
+Reducing stack by rule 17 (line 149):
+   $1 = nterm assignment (../test_progetto/inssort.k:16.21-32: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:16.21-32: )
+Entering state 121
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 27 57 85 111 121
+Next token is token } (../test_progetto/inssort.k:17.5: )
+Reducing stack by rule 22 (line 156):
+   $1 = token if (../test_progetto/inssort.k:16.8-9: )
+   $2 = token ( (../test_progetto/inssort.k:16.11: )
+   $3 = nterm condexp (../test_progetto/inssort.k:16.12-18: )
+   $4 = token ) (../test_progetto/inssort.k:16.19: )
+   $5 = nterm stmt (../test_progetto/inssort.k:16.21-32: )
+-> $$ = nterm ifstmt (../test_progetto/inssort.k:16.8-32: )
+Entering state 34
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 34
+Reducing stack by rule 19 (line 151):
+   $1 = nterm ifstmt (../test_progetto/inssort.k:16.8-32: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:16.8-32: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 33
+Next token is token } (../test_progetto/inssort.k:17.5: )
+Reducing stack by rule 15 (line 144):
+   $1 = nterm stmt (../test_progetto/inssort.k:16.8-32: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:16.8-32: )
+Entering state 96
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 33 65 96
+Reducing stack by rule 16 (line 145):
+   $1 = nterm stmt (../test_progetto/inssort.k:10.8-15.12: )
+   $2 = token ; (../test_progetto/inssort.k:15.13: )
+   $3 = nterm stmts (../test_progetto/inssort.k:16.8-32: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:10.8-16.32: )
+Entering state 97
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 97
+Next token is token } (../test_progetto/inssort.k:17.5: )
+Shifting token } (../test_progetto/inssort.k:17.5: )
+Entering state 117
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 17 38 66 97 117
+Reducing stack by rule 32 (line 174):
+   $1 = token { (../test_progetto/inssort.k:7.29: )
+   $2 = nterm vardefs (../test_progetto/inssort.k:8.8-9.19: )
+   $3 = token ; (../test_progetto/inssort.k:9.20: )
+   $4 = nterm stmts (../test_progetto/inssort.k:10.8-16.32: )
+   $5 = token } (../test_progetto/inssort.k:17.5: )
+-> $$ = nterm block (../test_progetto/inssort.k:7.29-17.5: )
+Entering state 37
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 37
+Reducing stack by rule 18 (line 150):
+   $1 = nterm block (../test_progetto/inssort.k:7.29-17.5: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:7.29-17.5: )
+Entering state 138
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 28 58 88 113 123 130 134 136 138
+Reducing stack by rule 24 (line 160):
+   $1 = token for (../test_progetto/inssort.k:7.4-6: )
+   $2 = token ( (../test_progetto/inssort.k:7.8: )
+   $3 = nterm init (../test_progetto/inssort.k:7.9-15: )
+   $4 = token ; (../test_progetto/inssort.k:7.16: )
+   $5 = nterm condexp (../test_progetto/inssort.k:7.18-21: )
+   $6 = token ; (../test_progetto/inssort.k:7.22: )
+   $7 = nterm assignment (../test_progetto/inssort.k:7.24-26: )
+   $8 = token ) (../test_progetto/inssort.k:7.27: )
+   $9 = nterm stmt (../test_progetto/inssort.k:7.29-17.5: )
+-> $$ = nterm forstmt (../test_progetto/inssort.k:7.4-17.5: )
+Entering state 35
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 35
+Reducing stack by rule 20 (line 152):
+   $1 = nterm forstmt (../test_progetto/inssort.k:7.4-17.5: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:7.4-17.5: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 33
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 51 ("}")
+Next token is token } (../test_progetto/inssort.k:18.1: )
+Reducing stack by rule 15 (line 144):
+   $1 = nterm stmt (../test_progetto/inssort.k:7.4-17.5: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:7.4-17.5: )
+Entering state 32
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 32
+Next token is token } (../test_progetto/inssort.k:18.1: )
+Shifting token } (../test_progetto/inssort.k:18.1: )
+Entering state 64
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 17 32 64
+Reducing stack by rule 31 (line 173):
+   $1 = token { (../test_progetto/inssort.k:6.15: )
+   $2 = nterm stmts (../test_progetto/inssort.k:7.4-17.5: )
+   $3 = token } (../test_progetto/inssort.k:18.1: )
+-> $$ = nterm block (../test_progetto/inssort.k:6.15-18.1: )
+Entering state 18
+Stack now 0 6 15 6 15 6 15 6 15 6 15 2 12 18
+Reducing stack by rule 8 (line 119):
+   $1 = token def (../test_progetto/inssort.k:6.1-3: )
+   $2 = nterm proto (../test_progetto/inssort.k:6.5-13: )
+   $3 = nterm block (../test_progetto/inssort.k:6.15-18.1: )
+-> $$ = nterm definition (../test_progetto/inssort.k:6.1-18.1: )
+Entering state 7
+Stack now 0 6 15 6 15 6 15 6 15 6 15 7
+Reducing stack by rule 5 (line 114):
+   $1 = nterm definition (../test_progetto/inssort.k:6.1-18.1: )
+-> $$ = nterm top (../test_progetto/inssort.k:6.1-18.1: )
+Entering state 6
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:18.2: )
+Shifting token ; (../test_progetto/inssort.k:18.2: )
+Entering state 15
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 55 ("def")
+Next token is token def (../test_progetto/inssort.k:19.1-3: )
+Shifting token def (../test_progetto/inssort.k:19.1-3: )
+Entering state 2
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("main")
+Next token is token id (../test_progetto/inssort.k:19.5-8: )
+Shifting token id (../test_progetto/inssort.k:19.5-8: )
+Entering state 10
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 10
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:19.9: )
+Shifting token ( (../test_progetto/inssort.k:19.9: )
+Entering state 16
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 10 16
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:19.10: )
+Reducing stack by rule 13 (line 132):
+-> $$ = nterm idseq (../test_progetto/inssort.k:19.10: )
+Entering state 22
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 10 16 22
+Next token is token ) (../test_progetto/inssort.k:19.10: )
+Shifting token ) (../test_progetto/inssort.k:19.10: )
+Entering state 47
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 10 16 22 47
+Reducing stack by rule 10 (line 125):
+   $1 = token id (../test_progetto/inssort.k:19.5-8: )
+   $2 = token ( (../test_progetto/inssort.k:19.9: )
+   $3 = nterm idseq (../test_progetto/inssort.k:19.10: )
+   $4 = token ) (../test_progetto/inssort.k:19.10: )
+-> $$ = nterm proto (../test_progetto/inssort.k:19.5-10: )
+Entering state 12
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 50 ("{")
+Next token is token { (../test_progetto/inssort.k:19.12: )
+Shifting token { (../test_progetto/inssort.k:19.12: )
+Entering state 17
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("  ")
+--accepting rule at line 57 ("var")
+Next token is token var (../test_progetto/inssort.k:20.3-5: )
+Shifting token var (../test_progetto/inssort.k:20.3-5: )
+Entering state 26
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("seed")
+Next token is token id (../test_progetto/inssort.k:20.7-10: )
+Shifting token id (../test_progetto/inssort.k:20.7-10: )
+Entering state 56
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:20.12: )
+Shifting token = (../test_progetto/inssort.k:20.12: )
+Entering state 82
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56 82
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("timek")
+Next token is token id (../test_progetto/inssort.k:20.14-18: )
+Shifting token id (../test_progetto/inssort.k:20.14-18: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56 82 53
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:20.19: )
+Shifting token ( (../test_progetto/inssort.k:20.19: )
+Entering state 61
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56 82 53 61
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:20.20: )
+Reducing stack by rule 61 (line 224):
+-> $$ = nterm optexp (../test_progetto/inssort.k:20.20: )
+Entering state 92
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56 82 53 61 92
+Next token is token ) (../test_progetto/inssort.k:20.20: )
+Shifting token ) (../test_progetto/inssort.k:20.20: )
+Entering state 115
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56 82 53 61 92 115
+Reducing stack by rule 59 (line 220):
+   $1 = token id (../test_progetto/inssort.k:20.14-18: )
+   $2 = token ( (../test_progetto/inssort.k:20.19: )
+   $3 = nterm optexp (../test_progetto/inssort.k:20.20: )
+   $4 = token ) (../test_progetto/inssort.k:20.20: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:20.14-20: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56 82 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:20.14-20: )
+-> $$ = nterm exp (../test_progetto/inssort.k:20.14-20: )
+Entering state 109
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56 82 109
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:20.21: )
+Reducing stack by rule 48 (line 201):
+   $1 = token = (../test_progetto/inssort.k:20.12: )
+   $2 = nterm exp (../test_progetto/inssort.k:20.14-20: )
+-> $$ = nterm initexp (../test_progetto/inssort.k:20.12-20: )
+Entering state 84
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 26 56 84
+Reducing stack by rule 35 (line 184):
+   $1 = token var (../test_progetto/inssort.k:20.3-5: )
+   $2 = token id (../test_progetto/inssort.k:20.7-10: )
+   $3 = nterm initexp (../test_progetto/inssort.k:20.12-20: )
+-> $$ = nterm binding (../test_progetto/inssort.k:20.3-20: )
+Entering state 39
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 39
+Reducing stack by rule 33 (line 177):
+   $1 = nterm binding (../test_progetto/inssort.k:20.3-20: )
+-> $$ = nterm vardefs (../test_progetto/inssort.k:20.3-20: )
+Entering state 38
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38
+Next token is token ; (../test_progetto/inssort.k:20.21: )
+Shifting token ; (../test_progetto/inssort.k:20.21: )
+Entering state 66
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("  ")
+--accepting rule at line 74 ("randinit")
+Next token is token id (../test_progetto/inssort.k:21.3-10: )
+Shifting token id (../test_progetto/inssort.k:21.3-10: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 30
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:21.11: )
+Shifting token ( (../test_progetto/inssort.k:21.11: )
+Entering state 61
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 30 61
+Reading a token
+--accepting rule at line 74 ("seed")
+Next token is token id (../test_progetto/inssort.k:21.12-15: )
+Shifting token id (../test_progetto/inssort.k:21.12-15: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 30 61 53
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:21.16: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:21.12-15: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:21.12-15: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 30 61 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:21.12-15: )
+-> $$ = nterm exp (../test_progetto/inssort.k:21.12-15: )
+Entering state 91
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 30 61 91
+Next token is token ) (../test_progetto/inssort.k:21.16: )
+Reducing stack by rule 63 (line 229):
+   $1 = nterm exp (../test_progetto/inssort.k:21.12-15: )
+-> $$ = nterm explist (../test_progetto/inssort.k:21.12-15: )
+Entering state 93
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 30 61 93
+Reducing stack by rule 62 (line 226):
+   $1 = nterm explist (../test_progetto/inssort.k:21.12-15: )
+-> $$ = nterm optexp (../test_progetto/inssort.k:21.12-15: )
+Entering state 92
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 30 61 92
+Next token is token ) (../test_progetto/inssort.k:21.16: )
+Shifting token ) (../test_progetto/inssort.k:21.16: )
+Entering state 115
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 30 61 92 115
+Reducing stack by rule 59 (line 220):
+   $1 = token id (../test_progetto/inssort.k:21.3-10: )
+   $2 = token ( (../test_progetto/inssort.k:21.11: )
+   $3 = nterm optexp (../test_progetto/inssort.k:21.12-15: )
+   $4 = token ) (../test_progetto/inssort.k:21.16: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:21.3-16: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:21.3-16: )
+-> $$ = nterm exp (../test_progetto/inssort.k:21.3-16: )
+Entering state 40
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 40
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:21.17: )
+Reducing stack by rule 21 (line 153):
+   $1 = nterm exp (../test_progetto/inssort.k:21.3-16: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:21.3-16: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33
+Next token is token ; (../test_progetto/inssort.k:21.17: )
+Shifting token ; (../test_progetto/inssort.k:21.17: )
+Entering state 65
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("  ")
+--accepting rule at line 61 ("for")
+Next token is token for (../test_progetto/inssort.k:22.3-5: )
+Shifting token for (../test_progetto/inssort.k:22.3-5: )
+Entering state 28
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:22.7: )
+Shifting token ( (../test_progetto/inssort.k:22.7: )
+Entering state 58
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58
+Reading a token
+--accepting rule at line 57 ("var")
+Next token is token var (../test_progetto/inssort.k:22.8-10: )
+Shifting token var (../test_progetto/inssort.k:22.8-10: )
+Entering state 26
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 26
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:22.12: )
+Shifting token id (../test_progetto/inssort.k:22.12: )
+Entering state 56
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 26 56
+Reading a token
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:22.13: )
+Shifting token = (../test_progetto/inssort.k:22.13: )
+Entering state 82
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 26 56 82
+Reading a token
+--accepting rule at line 66 ("0")
+Next token is token number (../test_progetto/inssort.k:22.14: )
+Shifting token number (../test_progetto/inssort.k:22.14: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 26 56 82 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:22.14: )
+-> $$ = nterm exp (../test_progetto/inssort.k:22.14: )
+Entering state 109
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 26 56 82 109
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:22.15: )
+Reducing stack by rule 48 (line 201):
+   $1 = token = (../test_progetto/inssort.k:22.13: )
+   $2 = nterm exp (../test_progetto/inssort.k:22.14: )
+-> $$ = nterm initexp (../test_progetto/inssort.k:22.13-14: )
+Entering state 84
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 26 56 84
+Reducing stack by rule 35 (line 184):
+   $1 = token var (../test_progetto/inssort.k:22.8-10: )
+   $2 = token id (../test_progetto/inssort.k:22.12: )
+   $3 = nterm initexp (../test_progetto/inssort.k:22.13-14: )
+-> $$ = nterm binding (../test_progetto/inssort.k:22.8-14: )
+Entering state 90
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 90
+Reducing stack by rule 25 (line 163):
+   $1 = nterm binding (../test_progetto/inssort.k:22.8-14: )
+-> $$ = nterm init (../test_progetto/inssort.k:22.8-14: )
+Entering state 88
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88
+Next token is token ; (../test_progetto/inssort.k:22.15: )
+Shifting token ; (../test_progetto/inssort.k:22.15: )
+Entering state 113
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:22.17: )
+Shifting token id (../test_progetto/inssort.k:22.17: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 53
+Reading a token
+--accepting rule at line 47 ("<")
+Next token is token < (../test_progetto/inssort.k:22.18: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:22.17: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:22.17: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:22.17: )
+-> $$ = nterm exp (../test_progetto/inssort.k:22.17: )
+Entering state 59
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 59
+Next token is token < (../test_progetto/inssort.k:22.18: )
+Shifting token < (../test_progetto/inssort.k:22.18: )
+Entering state 71
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 59 71
+Reading a token
+--accepting rule at line 66 ("10")
+Next token is token number (../test_progetto/inssort.k:22.19-20: )
+Shifting token number (../test_progetto/inssort.k:22.19-20: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 59 71 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:22.19-20: )
+-> $$ = nterm exp (../test_progetto/inssort.k:22.19-20: )
+Entering state 103
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 59 71 103
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:22.21: )
+Reducing stack by rule 55 (line 214):
+   $1 = nterm exp (../test_progetto/inssort.k:22.17: )
+   $2 = token < (../test_progetto/inssort.k:22.18: )
+   $3 = nterm exp (../test_progetto/inssort.k:22.19-20: )
+-> $$ = nterm relexp (../test_progetto/inssort.k:22.17-20: )
+Entering state 43
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 43
+Next token is token ; (../test_progetto/inssort.k:22.21: )
+Reducing stack by rule 50 (line 207):
+   $1 = nterm relexp (../test_progetto/inssort.k:22.17-20: )
+-> $$ = nterm condexp (../test_progetto/inssort.k:22.17-20: )
+Entering state 123
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123
+Next token is token ; (../test_progetto/inssort.k:22.21: )
+Shifting token ; (../test_progetto/inssort.k:22.21: )
+Entering state 130
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 38 ("+")
+Next token is token + (../test_progetto/inssort.k:22.23: )
+Shifting token + (../test_progetto/inssort.k:22.23: )
+Entering state 24
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 24
+Reading a token
+--accepting rule at line 38 ("+")
+Next token is token + (../test_progetto/inssort.k:22.24: )
+Shifting token + (../test_progetto/inssort.k:22.24: )
+Entering state 51
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 24 51
+Reading a token
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:22.25: )
+Shifting token id (../test_progetto/inssort.k:22.25: )
+Entering state 78
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 24 51 78
+Reducing stack by rule 29 (line 169):
+   $1 = token + (../test_progetto/inssort.k:22.23: )
+   $2 = token + (../test_progetto/inssort.k:22.24: )
+   $3 = token id (../test_progetto/inssort.k:22.25: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:22.23-25: )
+Entering state 134
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:22.26: )
+Shifting token ) (../test_progetto/inssort.k:22.26: )
+Entering state 136
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 50 ("{")
+Next token is token { (../test_progetto/inssort.k:22.28: )
+Shifting token { (../test_progetto/inssort.k:22.28: )
+Entering state 17
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("     ")
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:23.6: )
+Shifting token id (../test_progetto/inssort.k:23.6: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:23.7: )
+Shifting token [ (../test_progetto/inssort.k:23.7: )
+Entering state 63
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63
+Reading a token
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:23.8: )
+Shifting token id (../test_progetto/inssort.k:23.8: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 53
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:23.9: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:23.8: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:23.8: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:23.8: )
+-> $$ = nterm exp (../test_progetto/inssort.k:23.8: )
+Entering state 95
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95
+Next token is token ] (../test_progetto/inssort.k:23.9: )
+Shifting token ] (../test_progetto/inssort.k:23.9: )
+Entering state 116
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95 116
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:23.11: )
+Shifting token = (../test_progetto/inssort.k:23.11: )
+Entering state 125
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95 116 125
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("randk")
+Next token is token id (../test_progetto/inssort.k:23.13-17: )
+Shifting token id (../test_progetto/inssort.k:23.13-17: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95 116 125 53
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:23.18: )
+Shifting token ( (../test_progetto/inssort.k:23.18: )
+Entering state 61
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95 116 125 53 61
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:23.19: )
+Reducing stack by rule 61 (line 224):
+-> $$ = nterm optexp (../test_progetto/inssort.k:23.19: )
+Entering state 92
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95 116 125 53 61 92
+Next token is token ) (../test_progetto/inssort.k:23.19: )
+Shifting token ) (../test_progetto/inssort.k:23.19: )
+Entering state 115
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95 116 125 53 61 92 115
+Reducing stack by rule 59 (line 220):
+   $1 = token id (../test_progetto/inssort.k:23.13-17: )
+   $2 = token ( (../test_progetto/inssort.k:23.18: )
+   $3 = nterm optexp (../test_progetto/inssort.k:23.19: )
+   $4 = token ) (../test_progetto/inssort.k:23.19: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:23.13-19: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95 116 125 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:23.13-19: )
+-> $$ = nterm exp (../test_progetto/inssort.k:23.13-19: )
+Entering state 131
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 30 63 95 116 125 131
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:23.20: )
+Reducing stack by rule 28 (line 168):
+   $1 = token id (../test_progetto/inssort.k:23.6: )
+   $2 = token [ (../test_progetto/inssort.k:23.7: )
+   $3 = nterm exp (../test_progetto/inssort.k:23.8: )
+   $4 = token ] (../test_progetto/inssort.k:23.9: )
+   $5 = token = (../test_progetto/inssort.k:23.11: )
+   $6 = nterm exp (../test_progetto/inssort.k:23.13-19: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:23.6-19: )
+Entering state 36
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 36
+Reducing stack by rule 17 (line 149):
+   $1 = nterm assignment (../test_progetto/inssort.k:23.6-19: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:23.6-19: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33
+Next token is token ; (../test_progetto/inssort.k:23.20: )
+Shifting token ; (../test_progetto/inssort.k:23.20: )
+Entering state 65
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("     ")
+--accepting rule at line 74 ("printval")
+Next token is token id (../test_progetto/inssort.k:24.6-13: )
+Shifting token id (../test_progetto/inssort.k:24.6-13: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:24.14: )
+Shifting token ( (../test_progetto/inssort.k:24.14: )
+Entering state 61
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61
+Reading a token
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:24.15: )
+Shifting token id (../test_progetto/inssort.k:24.15: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 53
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:24.16: )
+Shifting token [ (../test_progetto/inssort.k:24.16: )
+Entering state 79
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 53 79
+Reading a token
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:24.17: )
+Shifting token id (../test_progetto/inssort.k:24.17: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 53 79 53
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:24.18: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:24.17: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:24.17: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 53 79 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:24.17: )
+-> $$ = nterm exp (../test_progetto/inssort.k:24.17: )
+Entering state 108
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 53 79 108
+Next token is token ] (../test_progetto/inssort.k:24.18: )
+Shifting token ] (../test_progetto/inssort.k:24.18: )
+Entering state 119
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 53 79 108 119
+Reducing stack by rule 60 (line 221):
+   $1 = token id (../test_progetto/inssort.k:24.15: )
+   $2 = token [ (../test_progetto/inssort.k:24.16: )
+   $3 = nterm exp (../test_progetto/inssort.k:24.17: )
+   $4 = token ] (../test_progetto/inssort.k:24.18: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:24.15-18: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:24.15-18: )
+-> $$ = nterm exp (../test_progetto/inssort.k:24.15-18: )
+Entering state 91
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 91
+Reading a token
+--accepting rule at line 44 (",")
+Next token is token "," (../test_progetto/inssort.k:24.19: )
+Shifting token "," (../test_progetto/inssort.k:24.19: )
+Entering state 114
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 91 114
+Reading a token
+--accepting rule at line 66 ("0")
+Next token is token number (../test_progetto/inssort.k:24.20: )
+Shifting token number (../test_progetto/inssort.k:24.20: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 91 114 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:24.20: )
+-> $$ = nterm exp (../test_progetto/inssort.k:24.20: )
+Entering state 91
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 91 114 91
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:24.21: )
+Reducing stack by rule 63 (line 229):
+   $1 = nterm exp (../test_progetto/inssort.k:24.20: )
+-> $$ = nterm explist (../test_progetto/inssort.k:24.20: )
+Entering state 124
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 91 114 124
+Reducing stack by rule 64 (line 230):
+   $1 = nterm exp (../test_progetto/inssort.k:24.15-18: )
+   $2 = token "," (../test_progetto/inssort.k:24.19: )
+   $3 = nterm explist (../test_progetto/inssort.k:24.20: )
+-> $$ = nterm explist (../test_progetto/inssort.k:24.15-20: )
+Entering state 93
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 93
+Reducing stack by rule 62 (line 226):
+   $1 = nterm explist (../test_progetto/inssort.k:24.15-20: )
+-> $$ = nterm optexp (../test_progetto/inssort.k:24.15-20: )
+Entering state 92
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 92
+Next token is token ) (../test_progetto/inssort.k:24.21: )
+Shifting token ) (../test_progetto/inssort.k:24.21: )
+Entering state 115
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 30 61 92 115
+Reducing stack by rule 59 (line 220):
+   $1 = token id (../test_progetto/inssort.k:24.6-13: )
+   $2 = token ( (../test_progetto/inssort.k:24.14: )
+   $3 = nterm optexp (../test_progetto/inssort.k:24.15-20: )
+   $4 = token ) (../test_progetto/inssort.k:24.21: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:24.6-21: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:24.6-21: )
+-> $$ = nterm exp (../test_progetto/inssort.k:24.6-21: )
+Entering state 40
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 40
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("  ")
+--accepting rule at line 51 ("}")
+Next token is token } (../test_progetto/inssort.k:25.3: )
+Reducing stack by rule 21 (line 153):
+   $1 = nterm exp (../test_progetto/inssort.k:24.6-21: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:24.6-21: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 33
+Next token is token } (../test_progetto/inssort.k:25.3: )
+Reducing stack by rule 15 (line 144):
+   $1 = nterm stmt (../test_progetto/inssort.k:24.6-21: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:24.6-21: )
+Entering state 96
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 33 65 96
+Reducing stack by rule 16 (line 145):
+   $1 = nterm stmt (../test_progetto/inssort.k:23.6-19: )
+   $2 = token ; (../test_progetto/inssort.k:23.20: )
+   $3 = nterm stmts (../test_progetto/inssort.k:24.6-21: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:23.6-24.21: )
+Entering state 32
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 32
+Next token is token } (../test_progetto/inssort.k:25.3: )
+Shifting token } (../test_progetto/inssort.k:25.3: )
+Entering state 64
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 17 32 64
+Reducing stack by rule 31 (line 173):
+   $1 = token { (../test_progetto/inssort.k:22.28: )
+   $2 = nterm stmts (../test_progetto/inssort.k:23.6-24.21: )
+   $3 = token } (../test_progetto/inssort.k:25.3: )
+-> $$ = nterm block (../test_progetto/inssort.k:22.28-25.3: )
+Entering state 37
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 37
+Reducing stack by rule 18 (line 150):
+   $1 = nterm block (../test_progetto/inssort.k:22.28-25.3: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:22.28-25.3: )
+Entering state 138
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 28 58 88 113 123 130 134 136 138
+Reducing stack by rule 24 (line 160):
+   $1 = token for (../test_progetto/inssort.k:22.3-5: )
+   $2 = token ( (../test_progetto/inssort.k:22.7: )
+   $3 = nterm init (../test_progetto/inssort.k:22.8-14: )
+   $4 = token ; (../test_progetto/inssort.k:22.15: )
+   $5 = nterm condexp (../test_progetto/inssort.k:22.17-20: )
+   $6 = token ; (../test_progetto/inssort.k:22.21: )
+   $7 = nterm assignment (../test_progetto/inssort.k:22.23-25: )
+   $8 = token ) (../test_progetto/inssort.k:22.26: )
+   $9 = nterm stmt (../test_progetto/inssort.k:22.28-25.3: )
+-> $$ = nterm forstmt (../test_progetto/inssort.k:22.3-25.3: )
+Entering state 35
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 35
+Reducing stack by rule 20 (line 152):
+   $1 = nterm forstmt (../test_progetto/inssort.k:22.3-25.3: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:22.3-25.3: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:25.4: )
+Shifting token ; (../test_progetto/inssort.k:25.4: )
+Entering state 65
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("  ")
+--accepting rule at line 74 ("printval")
+Next token is token id (../test_progetto/inssort.k:26.3-10: )
+Shifting token id (../test_progetto/inssort.k:26.3-10: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:26.11: )
+Shifting token ( (../test_progetto/inssort.k:26.11: )
+Entering state 61
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61
+Reading a token
+--accepting rule at line 66 ("0")
+Next token is token number (../test_progetto/inssort.k:26.12: )
+Shifting token number (../test_progetto/inssort.k:26.12: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:26.12: )
+-> $$ = nterm exp (../test_progetto/inssort.k:26.12: )
+Entering state 91
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 91
+Reading a token
+--accepting rule at line 44 (",")
+Next token is token "," (../test_progetto/inssort.k:26.13: )
+Shifting token "," (../test_progetto/inssort.k:26.13: )
+Entering state 114
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 91 114
+Reading a token
+--accepting rule at line 66 ("1")
+Next token is token number (../test_progetto/inssort.k:26.14: )
+Shifting token number (../test_progetto/inssort.k:26.14: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 91 114 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:26.14: )
+-> $$ = nterm exp (../test_progetto/inssort.k:26.14: )
+Entering state 91
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 91 114 91
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:26.15: )
+Reducing stack by rule 63 (line 229):
+   $1 = nterm exp (../test_progetto/inssort.k:26.14: )
+-> $$ = nterm explist (../test_progetto/inssort.k:26.14: )
+Entering state 124
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 91 114 124
+Reducing stack by rule 64 (line 230):
+   $1 = nterm exp (../test_progetto/inssort.k:26.12: )
+   $2 = token "," (../test_progetto/inssort.k:26.13: )
+   $3 = nterm explist (../test_progetto/inssort.k:26.14: )
+-> $$ = nterm explist (../test_progetto/inssort.k:26.12-14: )
+Entering state 93
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 93
+Reducing stack by rule 62 (line 226):
+   $1 = nterm explist (../test_progetto/inssort.k:26.12-14: )
+-> $$ = nterm optexp (../test_progetto/inssort.k:26.12-14: )
+Entering state 92
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 92
+Next token is token ) (../test_progetto/inssort.k:26.15: )
+Shifting token ) (../test_progetto/inssort.k:26.15: )
+Entering state 115
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 30 61 92 115
+Reducing stack by rule 59 (line 220):
+   $1 = token id (../test_progetto/inssort.k:26.3-10: )
+   $2 = token ( (../test_progetto/inssort.k:26.11: )
+   $3 = nterm optexp (../test_progetto/inssort.k:26.12-14: )
+   $4 = token ) (../test_progetto/inssort.k:26.15: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:26.3-15: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:26.3-15: )
+-> $$ = nterm exp (../test_progetto/inssort.k:26.3-15: )
+Entering state 40
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 40
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:26.16: )
+Reducing stack by rule 21 (line 153):
+   $1 = nterm exp (../test_progetto/inssort.k:26.3-15: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:26.3-15: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33
+Next token is token ; (../test_progetto/inssort.k:26.16: )
+Shifting token ; (../test_progetto/inssort.k:26.16: )
+Entering state 65
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("  ")
+--accepting rule at line 74 ("inssort")
+Next token is token id (../test_progetto/inssort.k:27.3-9: )
+Shifting token id (../test_progetto/inssort.k:27.3-9: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 30
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:27.10: )
+Shifting token ( (../test_progetto/inssort.k:27.10: )
+Entering state 61
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 30 61
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:27.11: )
+Reducing stack by rule 61 (line 224):
+-> $$ = nterm optexp (../test_progetto/inssort.k:27.11: )
+Entering state 92
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 30 61 92
+Next token is token ) (../test_progetto/inssort.k:27.11: )
+Shifting token ) (../test_progetto/inssort.k:27.11: )
+Entering state 115
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 30 61 92 115
+Reducing stack by rule 59 (line 220):
+   $1 = token id (../test_progetto/inssort.k:27.3-9: )
+   $2 = token ( (../test_progetto/inssort.k:27.10: )
+   $3 = nterm optexp (../test_progetto/inssort.k:27.11: )
+   $4 = token ) (../test_progetto/inssort.k:27.11: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:27.3-11: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:27.3-11: )
+-> $$ = nterm exp (../test_progetto/inssort.k:27.3-11: )
+Entering state 40
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 40
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:27.12: )
+Reducing stack by rule 21 (line 153):
+   $1 = nterm exp (../test_progetto/inssort.k:27.3-11: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:27.3-11: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33
+Next token is token ; (../test_progetto/inssort.k:27.12: )
+Shifting token ; (../test_progetto/inssort.k:27.12: )
+Entering state 65
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("  ")
+--accepting rule at line 61 ("for")
+Next token is token for (../test_progetto/inssort.k:28.3-5: )
+Shifting token for (../test_progetto/inssort.k:28.3-5: )
+Entering state 28
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:28.7: )
+Shifting token ( (../test_progetto/inssort.k:28.7: )
+Entering state 58
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58
+Reading a token
+--accepting rule at line 57 ("var")
+Next token is token var (../test_progetto/inssort.k:28.8-10: )
+Shifting token var (../test_progetto/inssort.k:28.8-10: )
+Entering state 26
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 26
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:28.12: )
+Shifting token id (../test_progetto/inssort.k:28.12: )
+Entering state 56
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 26 56
+Reading a token
+--accepting rule at line 49 ("=")
+Next token is token = (../test_progetto/inssort.k:28.13: )
+Shifting token = (../test_progetto/inssort.k:28.13: )
+Entering state 82
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 26 56 82
+Reading a token
+--accepting rule at line 66 ("0")
+Next token is token number (../test_progetto/inssort.k:28.14: )
+Shifting token number (../test_progetto/inssort.k:28.14: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 26 56 82 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:28.14: )
+-> $$ = nterm exp (../test_progetto/inssort.k:28.14: )
+Entering state 109
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 26 56 82 109
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:28.15: )
+Reducing stack by rule 48 (line 201):
+   $1 = token = (../test_progetto/inssort.k:28.13: )
+   $2 = nterm exp (../test_progetto/inssort.k:28.14: )
+-> $$ = nterm initexp (../test_progetto/inssort.k:28.13-14: )
+Entering state 84
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 26 56 84
+Reducing stack by rule 35 (line 184):
+   $1 = token var (../test_progetto/inssort.k:28.8-10: )
+   $2 = token id (../test_progetto/inssort.k:28.12: )
+   $3 = nterm initexp (../test_progetto/inssort.k:28.13-14: )
+-> $$ = nterm binding (../test_progetto/inssort.k:28.8-14: )
+Entering state 90
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 90
+Reducing stack by rule 25 (line 163):
+   $1 = nterm binding (../test_progetto/inssort.k:28.8-14: )
+-> $$ = nterm init (../test_progetto/inssort.k:28.8-14: )
+Entering state 88
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88
+Next token is token ; (../test_progetto/inssort.k:28.15: )
+Shifting token ; (../test_progetto/inssort.k:28.15: )
+Entering state 113
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:28.17: )
+Shifting token id (../test_progetto/inssort.k:28.17: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 53
+Reading a token
+--accepting rule at line 47 ("<")
+Next token is token < (../test_progetto/inssort.k:28.18: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:28.17: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:28.17: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:28.17: )
+-> $$ = nterm exp (../test_progetto/inssort.k:28.17: )
+Entering state 59
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 59
+Next token is token < (../test_progetto/inssort.k:28.18: )
+Shifting token < (../test_progetto/inssort.k:28.18: )
+Entering state 71
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 59 71
+Reading a token
+--accepting rule at line 66 ("10")
+Next token is token number (../test_progetto/inssort.k:28.19-20: )
+Shifting token number (../test_progetto/inssort.k:28.19-20: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 59 71 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:28.19-20: )
+-> $$ = nterm exp (../test_progetto/inssort.k:28.19-20: )
+Entering state 103
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 59 71 103
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:28.21: )
+Reducing stack by rule 55 (line 214):
+   $1 = nterm exp (../test_progetto/inssort.k:28.17: )
+   $2 = token < (../test_progetto/inssort.k:28.18: )
+   $3 = nterm exp (../test_progetto/inssort.k:28.19-20: )
+-> $$ = nterm relexp (../test_progetto/inssort.k:28.17-20: )
+Entering state 43
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 43
+Next token is token ; (../test_progetto/inssort.k:28.21: )
+Reducing stack by rule 50 (line 207):
+   $1 = nterm relexp (../test_progetto/inssort.k:28.17-20: )
+-> $$ = nterm condexp (../test_progetto/inssort.k:28.17-20: )
+Entering state 123
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123
+Next token is token ; (../test_progetto/inssort.k:28.21: )
+Shifting token ; (../test_progetto/inssort.k:28.21: )
+Entering state 130
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130
+Reading a token
+--accepting rule at line 34 (" ")
+--accepting rule at line 38 ("+")
+Next token is token + (../test_progetto/inssort.k:28.23: )
+Shifting token + (../test_progetto/inssort.k:28.23: )
+Entering state 24
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 24
+Reading a token
+--accepting rule at line 38 ("+")
+Next token is token + (../test_progetto/inssort.k:28.24: )
+Shifting token + (../test_progetto/inssort.k:28.24: )
+Entering state 51
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 24 51
+Reading a token
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:28.25: )
+Shifting token id (../test_progetto/inssort.k:28.25: )
+Entering state 78
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 24 51 78
+Reducing stack by rule 29 (line 169):
+   $1 = token + (../test_progetto/inssort.k:28.23: )
+   $2 = token + (../test_progetto/inssort.k:28.24: )
+   $3 = token id (../test_progetto/inssort.k:28.25: )
+-> $$ = nterm assignment (../test_progetto/inssort.k:28.23-25: )
+Entering state 134
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:28.26: )
+Shifting token ) (../test_progetto/inssort.k:28.26: )
+Entering state 136
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 34 ("     ")
+--accepting rule at line 74 ("printval")
+Next token is token id (../test_progetto/inssort.k:29.6-13: )
+Shifting token id (../test_progetto/inssort.k:29.6-13: )
+Entering state 30
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30
+Reading a token
+--accepting rule at line 41 ("(")
+Next token is token ( (../test_progetto/inssort.k:29.14: )
+Shifting token ( (../test_progetto/inssort.k:29.14: )
+Entering state 61
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61
+Reading a token
+--accepting rule at line 74 ("A")
+Next token is token id (../test_progetto/inssort.k:29.15: )
+Shifting token id (../test_progetto/inssort.k:29.15: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 53
+Reading a token
+--accepting rule at line 52 ("[")
+Next token is token [ (../test_progetto/inssort.k:29.16: )
+Shifting token [ (../test_progetto/inssort.k:29.16: )
+Entering state 79
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 53 79
+Reading a token
+--accepting rule at line 74 ("i")
+Next token is token id (../test_progetto/inssort.k:29.17: )
+Shifting token id (../test_progetto/inssort.k:29.17: )
+Entering state 53
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 53 79 53
+Reading a token
+--accepting rule at line 53 ("]")
+Next token is token ] (../test_progetto/inssort.k:29.18: )
+Reducing stack by rule 57 (line 218):
+   $1 = token id (../test_progetto/inssort.k:29.17: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:29.17: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 53 79 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:29.17: )
+-> $$ = nterm exp (../test_progetto/inssort.k:29.17: )
+Entering state 108
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 53 79 108
+Next token is token ] (../test_progetto/inssort.k:29.18: )
+Shifting token ] (../test_progetto/inssort.k:29.18: )
+Entering state 119
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 53 79 108 119
+Reducing stack by rule 60 (line 221):
+   $1 = token id (../test_progetto/inssort.k:29.15: )
+   $2 = token [ (../test_progetto/inssort.k:29.16: )
+   $3 = nterm exp (../test_progetto/inssort.k:29.17: )
+   $4 = token ] (../test_progetto/inssort.k:29.18: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:29.15-18: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:29.15-18: )
+-> $$ = nterm exp (../test_progetto/inssort.k:29.15-18: )
+Entering state 91
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 91
+Reading a token
+--accepting rule at line 44 (",")
+Next token is token "," (../test_progetto/inssort.k:29.19: )
+Shifting token "," (../test_progetto/inssort.k:29.19: )
+Entering state 114
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 91 114
+Reading a token
+--accepting rule at line 66 ("0")
+Next token is token number (../test_progetto/inssort.k:29.20: )
+Shifting token number (../test_progetto/inssort.k:29.20: )
+Entering state 31
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 91 114 31
+Reducing stack by rule 44 (line 195):
+   $1 = token number (../test_progetto/inssort.k:29.20: )
+-> $$ = nterm exp (../test_progetto/inssort.k:29.20: )
+Entering state 91
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 91 114 91
+Reading a token
+--accepting rule at line 42 (")")
+Next token is token ) (../test_progetto/inssort.k:29.21: )
+Reducing stack by rule 63 (line 229):
+   $1 = nterm exp (../test_progetto/inssort.k:29.20: )
+-> $$ = nterm explist (../test_progetto/inssort.k:29.20: )
+Entering state 124
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 91 114 124
+Reducing stack by rule 64 (line 230):
+   $1 = nterm exp (../test_progetto/inssort.k:29.15-18: )
+   $2 = token "," (../test_progetto/inssort.k:29.19: )
+   $3 = nterm explist (../test_progetto/inssort.k:29.20: )
+-> $$ = nterm explist (../test_progetto/inssort.k:29.15-20: )
+Entering state 93
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 93
+Reducing stack by rule 62 (line 226):
+   $1 = nterm explist (../test_progetto/inssort.k:29.15-20: )
+-> $$ = nterm optexp (../test_progetto/inssort.k:29.15-20: )
+Entering state 92
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 92
+Next token is token ) (../test_progetto/inssort.k:29.21: )
+Shifting token ) (../test_progetto/inssort.k:29.21: )
+Entering state 115
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 30 61 92 115
+Reducing stack by rule 59 (line 220):
+   $1 = token id (../test_progetto/inssort.k:29.6-13: )
+   $2 = token ( (../test_progetto/inssort.k:29.14: )
+   $3 = nterm optexp (../test_progetto/inssort.k:29.15-20: )
+   $4 = token ) (../test_progetto/inssort.k:29.21: )
+-> $$ = nterm idexp (../test_progetto/inssort.k:29.6-21: )
+Entering state 44
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 44
+Reducing stack by rule 42 (line 193):
+   $1 = nterm idexp (../test_progetto/inssort.k:29.6-21: )
+-> $$ = nterm exp (../test_progetto/inssort.k:29.6-21: )
+Entering state 40
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 40
+Reading a token
+--accepting rule at line 35 ("
+")
+--accepting rule at line 51 ("}")
+Next token is token } (../test_progetto/inssort.k:30.1: )
+Reducing stack by rule 21 (line 153):
+   $1 = nterm exp (../test_progetto/inssort.k:29.6-21: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:29.6-21: )
+Entering state 138
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 28 58 88 113 123 130 134 136 138
+Reducing stack by rule 24 (line 160):
+   $1 = token for (../test_progetto/inssort.k:28.3-5: )
+   $2 = token ( (../test_progetto/inssort.k:28.7: )
+   $3 = nterm init (../test_progetto/inssort.k:28.8-14: )
+   $4 = token ; (../test_progetto/inssort.k:28.15: )
+   $5 = nterm condexp (../test_progetto/inssort.k:28.17-20: )
+   $6 = token ; (../test_progetto/inssort.k:28.21: )
+   $7 = nterm assignment (../test_progetto/inssort.k:28.23-25: )
+   $8 = token ) (../test_progetto/inssort.k:28.26: )
+   $9 = nterm stmt (../test_progetto/inssort.k:29.6-21: )
+-> $$ = nterm forstmt (../test_progetto/inssort.k:28.3-29.21: )
+Entering state 35
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 35
+Reducing stack by rule 20 (line 152):
+   $1 = nterm forstmt (../test_progetto/inssort.k:28.3-29.21: )
+-> $$ = nterm stmt (../test_progetto/inssort.k:28.3-29.21: )
+Entering state 33
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 33
+Next token is token } (../test_progetto/inssort.k:30.1: )
+Reducing stack by rule 15 (line 144):
+   $1 = nterm stmt (../test_progetto/inssort.k:28.3-29.21: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:28.3-29.21: )
+Entering state 96
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 33 65 96
+Reducing stack by rule 16 (line 145):
+   $1 = nterm stmt (../test_progetto/inssort.k:27.3-11: )
+   $2 = token ; (../test_progetto/inssort.k:27.12: )
+   $3 = nterm stmts (../test_progetto/inssort.k:28.3-29.21: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:27.3-29.21: )
+Entering state 96
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 33 65 96
+Reducing stack by rule 16 (line 145):
+   $1 = nterm stmt (../test_progetto/inssort.k:26.3-15: )
+   $2 = token ; (../test_progetto/inssort.k:26.16: )
+   $3 = nterm stmts (../test_progetto/inssort.k:27.3-29.21: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:26.3-29.21: )
+Entering state 96
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 33 65 96
+Reducing stack by rule 16 (line 145):
+   $1 = nterm stmt (../test_progetto/inssort.k:22.3-25.3: )
+   $2 = token ; (../test_progetto/inssort.k:25.4: )
+   $3 = nterm stmts (../test_progetto/inssort.k:26.3-29.21: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:22.3-29.21: )
+Entering state 96
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 33 65 96
+Reducing stack by rule 16 (line 145):
+   $1 = nterm stmt (../test_progetto/inssort.k:21.3-16: )
+   $2 = token ; (../test_progetto/inssort.k:21.17: )
+   $3 = nterm stmts (../test_progetto/inssort.k:22.3-29.21: )
+-> $$ = nterm stmts (../test_progetto/inssort.k:21.3-29.21: )
+Entering state 97
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 97
+Next token is token } (../test_progetto/inssort.k:30.1: )
+Shifting token } (../test_progetto/inssort.k:30.1: )
+Entering state 117
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 17 38 66 97 117
+Reducing stack by rule 32 (line 174):
+   $1 = token { (../test_progetto/inssort.k:19.12: )
+   $2 = nterm vardefs (../test_progetto/inssort.k:20.3-20: )
+   $3 = token ; (../test_progetto/inssort.k:20.21: )
+   $4 = nterm stmts (../test_progetto/inssort.k:21.3-29.21: )
+   $5 = token } (../test_progetto/inssort.k:30.1: )
+-> $$ = nterm block (../test_progetto/inssort.k:19.12-30.1: )
+Entering state 18
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 2 12 18
+Reducing stack by rule 8 (line 119):
+   $1 = token def (../test_progetto/inssort.k:19.1-3: )
+   $2 = nterm proto (../test_progetto/inssort.k:19.5-10: )
+   $3 = nterm block (../test_progetto/inssort.k:19.12-30.1: )
+-> $$ = nterm definition (../test_progetto/inssort.k:19.1-30.1: )
+Entering state 7
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 7
+Reducing stack by rule 5 (line 114):
+   $1 = nterm definition (../test_progetto/inssort.k:19.1-30.1: )
+-> $$ = nterm top (../test_progetto/inssort.k:19.1-30.1: )
+Entering state 6
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 6
+Reading a token
+--accepting rule at line 43 (";")
+Next token is token ; (../test_progetto/inssort.k:30.2: )
+Shifting token ; (../test_progetto/inssort.k:30.2: )
+Entering state 15
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 6 15
+Reading a token
+--(end of buffer or a NUL)
+--accepting rule at line 35 ("
+")
+--(end of buffer or a NUL)
+--EOF (start condition 0)
+Next token is token end of file (../test_progetto/inssort.k:31.1: )
+Reducing stack by rule 2 (line 109):
+-> $$ = nterm program (../test_progetto/inssort.k:30.3: )
+Entering state 20
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 6 15 20
+Reducing stack by rule 3 (line 110):
+   $1 = nterm top (../test_progetto/inssort.k:19.1-30.1: )
+   $2 = token ; (../test_progetto/inssort.k:30.2: )
+   $3 = nterm program (../test_progetto/inssort.k:30.3: )
+-> $$ = nterm program (../test_progetto/inssort.k:19.1-30.2: )
+Entering state 20
+Stack now 0 6 15 6 15 6 15 6 15 6 15 6 15 20
+Reducing stack by rule 3 (line 110):
+   $1 = nterm top (../test_progetto/inssort.k:6.1-18.1: )
+   $2 = token ; (../test_progetto/inssort.k:18.2: )
+   $3 = nterm program (../test_progetto/inssort.k:19.1-30.2: )
+-> $$ = nterm program (../test_progetto/inssort.k:6.1-30.2: )
+Entering state 20
+Stack now 0 6 15 6 15 6 15 6 15 6 15 20
+Reducing stack by rule 3 (line 110):
+   $1 = nterm top (../test_progetto/inssort.k:5.1-12: )
+   $2 = token ; (../test_progetto/inssort.k:5.13: )
+   $3 = nterm program (../test_progetto/inssort.k:6.1-30.2: )
+-> $$ = nterm program (../test_progetto/inssort.k:5.1-30.2: )
+Entering state 20
+Stack now 0 6 15 6 15 6 15 6 15 20
+Reducing stack by rule 3 (line 110):
+   $1 = nterm top (../test_progetto/inssort.k:4.1-30: )
+   $2 = token ; (../test_progetto/inssort.k:4.31: )
+   $3 = nterm program (../test_progetto/inssort.k:5.1-30.2: )
+-> $$ = nterm program (../test_progetto/inssort.k:4.1-30.2: )
+Entering state 20
+Stack now 0 6 15 6 15 6 15 20
+Reducing stack by rule 3 (line 110):
+   $1 = nterm top (../test_progetto/inssort.k:3.1-14: )
+   $2 = token ; (../test_progetto/inssort.k:3.15: )
+   $3 = nterm program (../test_progetto/inssort.k:4.1-30.2: )
+-> $$ = nterm program (../test_progetto/inssort.k:3.1-30.2: )
+Entering state 20
+Stack now 0 6 15 6 15 20
+Reducing stack by rule 3 (line 110):
+   $1 = nterm top (../test_progetto/inssort.k:2.1-14: )
+   $2 = token ; (../test_progetto/inssort.k:2.15: )
+   $3 = nterm program (../test_progetto/inssort.k:3.1-30.2: )
+-> $$ = nterm program (../test_progetto/inssort.k:2.1-30.2: )
+Entering state 20
+Stack now 0 6 15 20
+Reducing stack by rule 3 (line 110):
+   $1 = nterm top (../test_progetto/inssort.k:1.1-21: )
+   $2 = token ; (../test_progetto/inssort.k:1.22: )
+   $3 = nterm program (../test_progetto/inssort.k:2.1-30.2: )
+-> $$ = nterm program (../test_progetto/inssort.k:1.1-30.2: )
+Entering state 5
+Stack now 0 5
+Reducing stack by rule 1 (line 106):
+   $1 = nterm program (../test_progetto/inssort.k:1.1-30.2: )
+-> $$ = nterm startsymb (../test_progetto/inssort.k:1.1-30.2: )
+Entering state 4
+Stack now 0 4
+Next token is token end of file (../test_progetto/inssort.k:31.1: )
+Shifting token end of file (../test_progetto/inssort.k:31.1: )
+Entering state 14
+Stack now 0 4 14
+Stack now 0 4 14
+Cleanup: popping token end of file (../test_progetto/inssort.k:31.1: )
+Cleanup: popping nterm startsymb (../test_progetto/inssort.k:1.1-30.2: )
+declare double @randinit(double)
+
+declare double @randk()
+
+declare double @timek()
+
+declare double @printval(double, double)
+
+@A = common global [10 x double] zeroinitializer
